@@ -20,13 +20,13 @@ function SignUp() {
         <p className='font-bold text-3xl'>@</p>
         <input type="text" placeholder="Email" className='border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3'/>
         </div>
-        <div className='flex space-x-7'><GoOctoface size={30}/>
+        <div className='flex space-x-7'><GoOctoface className='sm:text-3xl text-xl'/>
         <input type="text" placeholder="Full Name" className='border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3'/></div>
-        <div className='flex space-x-7'><SlLock size={30}/> 
+        <div className='flex space-x-7'><SlLock className='sm:text-3xl text-xl'/> 
         <input type="text" placeholder="Password" className='border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3'/></div>
         
         <div className='flex space-x-7 '>
-          <ImMobile2 size={30}/>
+          <ImMobile2 className='sm:text-3xl text-xl'/>
           <input type="text" placeholder="Phone No" className='border-b-2 border-black sm:w-96 w-56 pl-3 rounded-md h-8 mb-3 sm:mb-0' />
         </div>
       <p className='text-gray-500 sm:text-sm text-xs font-sans'>By signing up, you agreed to our <span className='font-semibold text-blue-500'>Terms & Conditions and Privacy Policy</span></p>
