@@ -1,30 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css';
-import Preloader from './components/Preloader';
-import { useEffect } from 'react';
+import PreLoader from './components/Preloader';
+
 import Login from './components/Login';
+// import { Routes, Route } from "react-router-dom"
+
 
 function App() {
-  const [preloader, setPreloader] = useState(true)
+ 
 
 
-  useEffect (() => {
-setTimeout(() => {
-  setPreloader(false)
-}, 2000);
-  []});
+
+
   return (
     <>
-      <div>
-<Preloader preloader={preloader} />
-<div style={{opacity: preloader ? 0 : 1, transition: "all 1s ease-in-out", overflow: "hidden"
-}}>
-  <Login />
-</div>
+      
+<PreLoader />
 
-  </div>
+<Login />
+{/* <div>
+  <h2>sooooooooooooo</h2>
+  </div> */}
+        {/* <Routes>
+        <Route path="login" element={ <Login/> } />
+        <Route index element={ <main /> } />
+      </Routes> */}
+
        
     </>
   )
