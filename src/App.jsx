@@ -1,8 +1,8 @@
 // import { useState } from 'react'
 import './App.css';
 import PreLoader from './components/Preloader';
-
 import SignUp from './components/SignUp';
+
 // import { Routes, Route } from "react-router-dom"
 
 
