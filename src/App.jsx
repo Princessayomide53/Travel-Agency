@@ -18,7 +18,6 @@ function App() {
 
         {/* <Routes>
         <Route path="SignUp" element={ <SignUp/> } />
-        <Route index element={ <main /> } />
       </Routes> */}
 
        

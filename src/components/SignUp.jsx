@@ -1,9 +1,9 @@
 import React from 'react';
 import Signup from "../assets/Signup.png";
-import {MdAlternateEmail} from "react-icons/Md"
- import {GoOctoface} from "react-icons/Go"
- import {SlLock} from "react-icons/Sl"
- import {ImMobile2} from "react-icons/Im"
+import {MdAlternateEmail} from "react-icons/md"
+ import {GoOctoface} from "react-icons/go"
+ import {SlLock} from "react-icons/sl"
+ import {ImMobile2} from "react-icons/im"
 
 function SignUp() {
   return (
