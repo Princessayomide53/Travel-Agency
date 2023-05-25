@@ -10,7 +10,7 @@ function SignUp() {
 <div className=' flex sm:flex-row sm:justify-evenly flex-col'>
   <div className='flex justify-center'>
   <img src={handshake} alt="illustration"
-   className='w-[200px] h-[200px] sm:w-[580px] sm:h-[650px]'/>
+   className='w-[100px] h-[100px] sm:w-[580px] sm:h-[650px]'/>
   </div>
     <div>
       <h1 className='text-black text-5xl font-serif text-center pt-5 sm:pt-10 font-bold'>Sign Up</h1>
