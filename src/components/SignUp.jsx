@@ -1,5 +1,5 @@
 import React from 'react';
-import Signup from "../assets/Signup.png";
+import handshake from "../assets/handshake.png";
  import {GoOctoface} from "react-icons/go"
  import {SlLock} from "react-icons/sl"
  import {ImMobile2} from "react-icons/im"
@@ -9,7 +9,7 @@ function SignUp() {
 <section>
 <div className=' flex sm:flex-row sm:justify-evenly flex-col'>
   <div className='flex justify-center'>
-  <img src={Signup} alt="illustration"
+  <img src={handshake} alt="illustration"
    className='w-[400px] h-[400px] sm:w-[580px] sm:h-[650px]'/>
   </div>
     <div>
