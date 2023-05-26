@@ -3,7 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import PreLoader from './components/Preloader';
 import SignUp from './components/SignUp';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 
 
 
@@ -15,12 +15,12 @@ function App() {
   
 <PreLoader />
 
-<SignUp />
-<Router>
+
          <Routes>
+        <Route path="/" element={ <SignUp/> } />
         <Route path="/login" element={ <Login/> } />
       </Routes> 
-      </Router>  
+
     </>
   )
 }
