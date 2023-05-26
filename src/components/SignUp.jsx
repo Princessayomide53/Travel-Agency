@@ -1,8 +1,9 @@
 import React from 'react';
+import { GoOctoface } from "react-icons/go";
+import { SlLock } from "react-icons/sl";
+import { ImMobile2 } from "react-icons/im";
 import handshake from "../assets/handshake.png";
- import { GoOctoface } from "react-icons/go"
- import {SlLock} from "react-icons/sl"
- import {ImMobile2} from "react-icons/im"
+
 
 function SignUp() {
   return (
