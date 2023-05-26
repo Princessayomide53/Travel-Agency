@@ -1,7 +1,11 @@
 import React from 'react'
+import travel from "../assets/travel.png"
 
-export default function Login() {
+function Login() {
   return (
-    <div>Login</div>
+    <div>
+      <img src={travel} alt="" />
+    </div>
   )
 }
+export default Login;

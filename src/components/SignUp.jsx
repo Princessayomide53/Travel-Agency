@@ -3,6 +3,7 @@ import { GoOctoface } from "react-icons/go";
 import { SlLock } from "react-icons/sl";
 import { ImMobile2 } from "react-icons/im";
 import handshake from "../assets/handshake.png";
+import { Link } from "react-router-dom";
 
 
 function SignUp() {
@@ -33,7 +34,8 @@ function SignUp() {
       <p className='text-gray-500 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0'>By signing up, you agreed to our <span className='font-semibold text-blue-500'>Terms & Conditions and Privacy Policy</span></p>
 
       <div className='flex-row flex space-x-10 pb-3 sm:mb-0'> <button className='bg-blue-600 font-semibold sm:text-base text-sm rounded-2xl px-10 py-2 text-white '>Continue </button> 
-      <p className='text-gray-500 sm:text-sm text-xs font-sans font-semibold mt-[10px]'>Joined us before? <span className='text-blue-600 font-semibold'>Login</span></p></div>
+      <Link to="login"> <p className='text-gray-500 sm:text-sm text-xs font-sans font-semibold mt-[10px]'>Joined us before? <span className='text-blue-600 font-semibold'>Login</span>
+      </p></Link></div>
       </div>
       </form>
       </div>

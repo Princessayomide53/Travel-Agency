@@ -1,9 +1,10 @@
 // import { useState } from 'react'
 import './App.css';
+import Login from './components/Login';
 import PreLoader from './components/Preloader';
 import SignUp from './components/SignUp';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import { Routes, Route } from "react-router-dom"
 
 
 function App() {
@@ -11,16 +12,15 @@ function App() {
 
   return (
     <>
-      
+  
 <PreLoader />
 
 <SignUp />
-
-        {/* <Routes>
-        <Route path="SignUp" element={ <SignUp/> } />
-      </Routes> */}
-
-       
+<Router>
+         <Routes>
+        <Route path="/login" element={ <Login/> } />
+      </Routes> 
+      </Router>  
     </>
   )
 }
