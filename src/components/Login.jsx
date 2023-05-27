@@ -38,7 +38,7 @@ function Login() {
                 />
               </div>
             </div>
-            <div className="items-end justify-end sm:mt-16 mt-10 flex">
+            <div className="items-end justify-end sm:mt-12 mt-10 flex">
               <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0">Forgot Password?</p>
             </div>
             <div className="flex justify-center pt-9">
