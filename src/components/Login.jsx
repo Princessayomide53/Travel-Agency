@@ -39,9 +39,9 @@ function Login() {
               </div>
             </div>
             <div className="items-end justify-end sm:mt-16 mt-10 flex">
-              <p className=" text-blue-600 text-xs sm:text-sm pr-14">Forgot Password?</p>
+              <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0">Forgot Password?</p>
             </div>
-            <div className="flex justify-center pt-7">
+            <div className="flex justify-center pt-9">
               <button className="bg-blue-700 rounded-2xl text-white px-14 py-2 sm:py-2">
                 Login
               </button>
