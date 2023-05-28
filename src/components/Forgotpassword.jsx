@@ -1,10 +1,13 @@
 import React from "react";
 import forgotpass from "../assets/forgotpass.png";
+import { Link } from "react-router-dom";
+
+
 
 function Forgotpassword() {
   return (
     <section>
-      <div className="flex flex-col  sm:justify-around">
+      <div className="flex flex-col ">
         <div className="flex justify-center">
           <img
             src={forgotpass}
@@ -34,7 +37,7 @@ function Forgotpassword() {
             </div>
             <div className="flex justify-center pt-12">
               <button className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
-                Continue
+               <Link to="/reset">Continue</Link> 
               </button>
               </div>
           </form>
