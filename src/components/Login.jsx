@@ -11,7 +11,7 @@ function Login() {
           <img
             src={travel}
             alt="Illustration2"
-            className="w-[200px] h-[200px] sm:w-[580px] sm:h-[650px]"
+            className="w-[250px] h-[250px] sm:w-[580px] sm:h-[650px]"
           />
         </div>
         <div>
@@ -43,7 +43,7 @@ function Login() {
               <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0 font-bold"><Link to="/forgotpassword">Forgot Password? </Link></p>
             </div>
             <div className="flex justify-center pt-9">
-              <button className="bg-blue-700 rounded-2xl text-white px-14 py-2 sm:py-2">
+              <button className="bg-blue-700 rounded-xl sm:text-lg text-base text-white sm:w-[400px] font-semibold w-72 h-12">
                 Login
               </button>
             </div>
