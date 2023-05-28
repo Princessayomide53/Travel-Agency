@@ -20,7 +20,7 @@ function Forgotpassword() {
           <h1 className="text-black sm:text-5xl text-2xl font-serif text-center pt-5 sm:pt-[50px] font-bold">
             Forgot Password
           </h1>
-          <p className="text-gray-500 sm:text-sm text-xs sm:pt-10 pt-5 sm:pl-0 sm:pr-0 pl-5 pr-5">
+          <p className="text-gray-500 sm:text-sm text-xs sm:pt-10 pt-5 sm:pl-0 sm:pr-0 pl-5 pr-5 text-center">
             Don't worry! It happens. Please enter the address assiociated with
             your account.
           </p>
