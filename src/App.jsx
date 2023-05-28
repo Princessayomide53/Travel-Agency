@@ -4,6 +4,7 @@ import Login from './components/Login';
 import PreLoader from './components/Preloader';
 import SignUp from './components/SignUp';
 import Forgotpassword from './components/Forgotpassword';
+import Reset from './components/Reset';
 import {  Routes, Route } from "react-router-dom";
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={ <SignUp/> } />
         <Route path="/login" element={ <Login/> } />
         <Route path="/forgotpassword" element={ <Forgotpassword/> } />
+        <Route path="/reset" element={ <Reset/> } />
       </Routes> 
 
     </>

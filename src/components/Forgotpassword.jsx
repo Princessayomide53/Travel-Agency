@@ -33,7 +33,7 @@ function Forgotpassword() {
               />
             </div>
             <div className="flex justify-center pt-12">
-              <button className="bg-blue-700 rounded-xl text-white w-full h-12">
+              <button className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
                 Continue
               </button>
               </div>
