@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import reset from "../assets/reset.png";
 import { SlLock } from "react-icons/sl";
 
 function Reset() {
+  const [filled, setFilled] = useState(true);
+
   return (
   <article>
     <div className='flex flex-col'>
@@ -31,7 +33,7 @@ function Reset() {
               />
             </div>
             <div className="flex justify-center pt-12 pb-2">
-              <button className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
+              <button disabled={filled} className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
                Continue 
               </button>
               </div>

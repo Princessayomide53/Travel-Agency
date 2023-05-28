@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import forgotpass from "../assets/forgotpass.png";
 import { Link } from "react-router-dom";
 
 
 
 function Forgotpassword() {
+   const [filled, setFilled] = useState(true);
+
+  // const isAnonymous = true;
   return (
     <section>
       <div className="flex flex-col ">
@@ -35,11 +38,15 @@ function Forgotpassword() {
                 className="border-b-2 border-black sm:w-96 w-56  rounded-md h-8 pl-3"
               />
             </div>
+            
             <div className="flex justify-center pt-12 pb-2">
-              <button className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
+              <button type="submit" disabled={filled} className="bg-blue-600 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
+               
                <Link to="/reset">Continue</Link> 
               </button>
+
               </div>
+
           </form>
         </div>
       </div>

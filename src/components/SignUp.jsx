@@ -4,8 +4,29 @@ import { SlLock } from "react-icons/sl";
 import { ImMobile2 } from "react-icons/im";
 import handshake from "../assets/handshake.png";
 import { Link } from "react-router-dom";
+import { useFormik } from 'formik';
+import {validationSchema} from '../Schema/index';
+// import * as Yup from 'yup'
 
 function SignUp() {
+ 
+  
+
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      fullName: '',
+      password: '',
+      phoneNumber: '',
+      
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values, {resetForm}) => {
+      console.log(values);
+      resetForm();
+    },
+  });
+
   return (
     <section>
       <div className="overflow-hidden flex sm:flex-row sm:justify-evenly flex-col">
@@ -20,54 +41,78 @@ function SignUp() {
           <h1 className="text-black sm:text-5xl text-2xl font-serif text-center pt-5 sm:pt-10 font-bold">
             Sign Up
           </h1>
-          <form>
-            <div className="sm:space-y-16 pt-12 space-y-14 items-center flex flex-col pl-5 pr-5 sm:pl-0 sm:pr-0">
-              <div className="flex space-x-7">
+          <form onSubmit={formik.handleSubmit}>
+            <div className="items-center flex flex-col pl-5 pr-5 sm:pl-0 sm:pr-0">
+              <div className="flex space-x-7 mt-10 sm:mt-12">
                 <p className="font-bold sm:text-3xl text-xl mt-[5px] sm:mt-0">
                   @
                 </p>
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
                   placeholder="Email"
                   className="border-b-2 border-black sm:w-96 w-56  rounded-md h-8 pl-3"
+                  onChange={formik.handleChange}
+         value={formik.values.email}
+         onBlur={formik.handleBlur}
                 />
-              </div>
-              <div className="flex space-x-7">
+                </div>
+                         {formik.touched.email && formik.errors.email && <div className="text-red-500 flex justify-start items-start">{formik.errors.email}</div>}
+              
+              <div className="flex space-x-7 mt-10 sm:mt-12">
                 <GoOctoface className='sm:text-3xl text-xl mt-[5px] sm:mt-0'/> 
                 <input
                   type="text"
+                  name="fullName"
                   placeholder="Full Name"
                   className="border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3"
+                  onChange={formik.handleChange}
+         value={formik.values.fullName}
+         onBlur={formik.handleBlur}
                 />
-              </div>
-              <div className="flex space-x-7">
+                </div>
+                         {formik.touched.fullName && formik.errors.fullName && <div className="text-red-500">{formik.errors.fullName}</div>}
+              
+              <div className="flex space-x-7 mt-10 sm:mt-12">
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
                 <input
                   type="password"
+                  name="password"
                   placeholder="Password"
                   className="border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3"
+                  onChange={formik.handleChange}
+         value={formik.values.password}
+         onBlur={formik.handleBlur}
                 />
-              </div>
+                </div>
+                         {formik.touched.password && formik.errors.password && <div className="text-red-500">{formik.errors.password}</div>}
+              
 
-              <div className="flex space-x-7 ">
+              <div className="flex space-x-7 mt-10 sm:mt-12">
                 <ImMobile2 className='sm:text-3xl text-xl mt-[5px] sm:mt-0'/>
                 <input
-                  type="text"
+                  type="tel"
+                  name="phoneNumber"
                   placeholder="Phone No"
                   className="border-b-2 border-black sm:w-96 w-56 pl-3 rounded-md h-8 mb-3 sm:mb-0"
+                  onChange={formik.handleChange}
+         value={formik.values.phoneNumber}
+         onBlur={formik.handleBlur}
                 />
-              </div>
-              <p className="text-gray-500 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
+                </div>
+                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500">{formik.errors.phoneNumber}</div>}
+              
+              <p className="text-gray-500 mt-10 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
                 By signing up, you agreed to our{" "}
                 <span className="font-semibold text-blue-500">
                   Terms & Conditions and Privacy Policy
                 </span>
               </p>
 
-              <div className="flex-row flex space-x-10 pb-3 sm:mb-0">
+              <div className="flex-row flex space-x-10 mt-7 pb-3 sm:mb-0">
                 {" "}
-                <button className="bg-blue-600 font-semibold sm:text-base text-sm rounded-2xl px-10 py-2 text-white ">
-                  Continue{" "}
+                <button type="submit" disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-600 font-semibold sm:text-base text-sm rounded-2xl px-10 py-2 text-white ">
+                  Continue
                 </button>
                 <Link to="login">
                   {" "}
