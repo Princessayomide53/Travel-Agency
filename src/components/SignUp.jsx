@@ -43,7 +43,7 @@ function SignUp() {
               <div className="flex space-x-7">
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Password"
                   className="border-b-2 border-black sm:w-96 w-56 rounded-md h-8 pl-3"
                 />
