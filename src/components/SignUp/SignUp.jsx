@@ -2,10 +2,10 @@ import React from "react";
 import { GoOctoface } from "react-icons/go";
 import { SlLock } from "react-icons/sl";
 import { ImMobile2 } from "react-icons/im";
-import handshake from "../assets/handshake.png";
+import handshake from "../../assets/handshake.png";
 import { Link } from "react-router-dom";
 import { useFormik } from 'formik';
-import {validationSchema} from '../Schema/index';
+import {validationSchema} from '../../Schema/index';
 // import * as Yup from 'yup'
 
 function SignUp() {

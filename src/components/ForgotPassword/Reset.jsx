@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import reset from "../assets/reset.png";
+import React from 'react';
+import reset from "../../assets/reset.png";
 import { SlLock } from "react-icons/sl";
 import { useFormik } from 'formik';
-import {validationSchema} from '../Schema/mild';
+import {validationSchema} from '../../Schema/mild';
 
 function Reset() {
   const formik = useFormik({

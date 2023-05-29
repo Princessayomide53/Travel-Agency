@@ -1,8 +1,8 @@
 import React from "react";
-import forgotpass from "../assets/forgotpass.png";
+import forgotpass from "../../assets/forgotpass.png";
 import { Link } from "react-router-dom";
 import { useFormik } from 'formik';
-import {validationSchema} from '../Schema/still';
+import {validationSchema} from '../../Schema/still';
 
 
 function Forgotpassword() {
@@ -46,6 +46,7 @@ function Forgotpassword() {
                 type="email"
                 name="email"
                 placeholder="Email"
+                required
                 className="border-b-2 border-black sm:w-96 w-56  rounded-md h-8 pl-3"
                 onChange={formik.handleChange}
          value={formik.values.email}

@@ -1,9 +1,9 @@
 import React from "react";
-import travel from "../assets/travel.png";
+import travel from "../../assets/travel.png";
 import { SlLock } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { useFormik } from 'formik';
-import {basicSchema} from '../Schema/schema';
+import {basicSchema} from '../../Schema/schema';
 
 
 function Login() {
