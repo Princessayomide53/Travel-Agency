@@ -100,7 +100,7 @@ function SignUp() {
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500 pr-[21px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.phoneNumber}</div>}
+                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500 pr-[20px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.phoneNumber}</div>}
               
               <p className="text-gray-500 mt-10 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
                 By signing up, you agreed to our{" "}
