@@ -50,7 +50,7 @@ function Login() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.email && formik.errors.email && <div className="text-red-500 flex justify-start items-start pr-[70px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.email}</div>}
+              {formik.touched.email && formik.errors.email && <div className="text-red-500 flex justify-start items-start pr-[70px] mt-2 sm:pr-[190px] text-xs sm:text-base">{formik.errors.email}</div>}
 
               <div className="flex space-x-7 mt-12 sm:mt-14">
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
@@ -64,7 +64,7 @@ function Login() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start pr-12 sm:pr-40 text-xs sm:text-base">{formik.errors.password}</div>}
+              {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start pr-12 mt-2 sm:pr-40 text-xs sm:text-base">{formik.errors.password}</div>}
             </div>
 
 

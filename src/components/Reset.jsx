@@ -40,7 +40,7 @@ function Reset() {
                   onBlur={formik.handleBlur}
               />
             </div>
-            {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start text-xs sm:text-base pl-14">{formik.errors.password}</div>}
+            {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start text-xs sm:text-base mt-2 pl-14">{formik.errors.password}</div>}
 
             <div className="flex space-x-7 pt-14">
               <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0"/>
@@ -54,7 +54,7 @@ function Reset() {
                   onBlur={formik.handleBlur}
               />
             </div>
-            {formik.touched.confirmPassword && formik.errors.confirmPassword && <div className="text-red-500 flex justify-start items-start text-xs sm:text-base pl-14">{formik.errors.confirmPassword}</div>}
+            {formik.touched.confirmPassword && formik.errors.confirmPassword && <div className="text-red-500 flex justify-start items-start text-xs sm:text-base mt-2 pl-14">{formik.errors.confirmPassword}</div>}
 
             <div className="flex justify-center pt-12 pb-2">
               <button type='submit' disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-700 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
