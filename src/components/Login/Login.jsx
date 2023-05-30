@@ -4,9 +4,15 @@ import { SlLock } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { useFormik } from 'formik';
 import {basicSchema} from '../../Schema/schema';
+import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {auth} from '../../firebase/Firebase.Config';
 
 
 function Login() {
+
+  const Login = async ()  => {
+    await createUserWithEmailAndPassword(auth)
+  }
   const formik = useFormik({
     initialValues: {
       email: '', 
@@ -72,7 +78,7 @@ function Login() {
               <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0 font-bold"><Link to="/forgotpassword">Forgot Password? </Link></p>
             </div>
             <div className="flex justify-center pt-9">
-              <button disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-700 rounded-xl sm:text-lg text-base text-white sm:w-[400px] font-semibold w-72 h-12">
+              <button disabled={!formik.isValid || formik.isSubmitting} type="submit" onClick={Login} className="bg-blue-700 rounded-xl sm:text-lg text-base text-white sm:w-[400px] font-semibold w-72 h-12">
                 Login
               </button>
             </div>

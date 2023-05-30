@@ -1,23 +1,32 @@
 import React from "react";
 import { GoOctoface } from "react-icons/go";
 import { SlLock } from "react-icons/sl";
-import { ImMobile2 } from "react-icons/im";
 import handshake from "../../assets/handshake.png";
 import { Link } from "react-router-dom";
 import { useFormik } from 'formik';
 import {validationSchema} from '../../Schema/index';
+import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {auth} from '../../firebase/Firebase.Config';
 // import * as Yup from 'yup'
 
 function SignUp() {
  
-  
+  console.log(auth?.currentUser?.email)
+  const SignUp = async ()  => {
+    try {
+    await createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password, formik.values.fullName, formik.values.confirmPassword, )
+  }catch(err) {
+    console.error(err)
+  }
+}
+
 
   const formik = useFormik({
     initialValues: {
       email: '',
       fullName: '',
       password: '',
-      phoneNumber: '',
+      confirmPassword: '',
       
     },
     validationSchema: validationSchema,
@@ -89,18 +98,18 @@ function SignUp() {
               
 
               <div className="flex space-x-7 mt-10 sm:mt-12">
-                <ImMobile2 className='sm:text-3xl text-xl mt-[5px] sm:mt-0'/>
+                <SlLock className='sm:text-3xl text-xl mt-[5px] sm:mt-0'/>
                 <input
-                  type="tel"
-                  name="phoneNumber"
-                  placeholder="Phone No"
+                  type="password"
+                  name="confimPassword"
+                  placeholder="Confirm Password"
                   className="border-b-2 border-black sm:w-96 w-56 pl-3 rounded-md h-8 mb-3 sm:mb-0"
                   onChange={formik.handleChange}
-         value={formik.values.phoneNumber}
+         value={formik.values.confirmPassword}
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500 pr-[20px] sm:pr-[120px]  sm:mt-3 text-xs sm:text-base">{formik.errors.phoneNumber}</div>}
+                {formik.touched.confirmPassword && formik.errors.confirmPassword && <div className="text-red-500 pr-[5px] mt-2 sm:pr-[154px] text-xs sm:text-base">{formik.errors.confirmPassword}</div>}
               
               <p className="text-gray-500 mt-10 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
                 By signing up, you agreed to our{" "}
@@ -109,19 +118,19 @@ function SignUp() {
                 </span>
               </p>
 
-              <div className="flex-row flex space-x-10 mt-7 pb-3 sm:mb-0">
+              <div className="flex-col flex space-x-10 mt-7 pb-3 sm:mb-0">
                 {" "}
-                <button type="submit" disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-600 font-semibold sm:text-base text-sm rounded-2xl px-10 py-2 text-white ">
-                  Continue
+                <button type="submit" onClick={SignUp} disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-600 font-semibold sm:text-base text-sm rounded-2xl px-10 py-2 text-white ">
+                  Create an account
                 </button>
-                <Link to="login">
+                
                   {" "}
-                  <p className="text-gray-500 sm:text-sm text-xs font-sans font-semibold mt-[10px]">
+                  <p className="text-gray-500 sm:text-sm text-sm font-sans font-semibold mt-[10px]">
                     Joined us before?{" "}
-                    <span className="text-blue-600 font-semibold">Login</span>
+                    <span className="text-blue-600 font-semibold"><Link to="login">Login </Link></span>
                   </p>
-                </Link>
               </div>
+            
             </div>
           </form>
         </div>
