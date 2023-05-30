@@ -64,7 +64,7 @@ function Login() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start pr-12 mt-2 sm:pr-40 text-xs sm:text-base">{formik.errors.password}</div>}
+              {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start pr-12 mt-3 sm:pr-40 text-xs sm:text-base">{formik.errors.password}</div>}
             </div>
 
 

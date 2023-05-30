@@ -57,7 +57,7 @@ function SignUp() {
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.email && formik.errors.email && <div className="text-red-500 mt-3 pr-[67px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.email}</div>}
+                         {formik.touched.email && formik.errors.email && <div className="text-red-500 mt-3 pr-[67px] sm:pr-[180px] text-xs sm:text-base">{formik.errors.email}</div>}
               
               <div className="flex space-x-7 mt-10 sm:mt-12">
                 <GoOctoface className='sm:text-3xl text-xl mt-[5px] sm:mt-0'/> 
@@ -71,7 +71,7 @@ function SignUp() {
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.fullName && formik.errors.fullName && <div className="text-red-500 pr-[47px] mt-3 sm:pr-[190px] text-xs sm:text-base">{formik.errors.fullName}</div>}
+                         {formik.touched.fullName && formik.errors.fullName && <div className="text-red-500 pr-[47px] mt-3 sm:pr-[156px] text-xs sm:text-base">{formik.errors.fullName}</div>}
               
               <div className="flex space-x-7 mt-10 sm:mt-12">
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
@@ -85,7 +85,7 @@ function SignUp() {
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.password && formik.errors.password && <div className="text-red-500 pr-[47px] mt-3 sm:pr-[190px] text-xs sm:text-base">{formik.errors.password}</div>}
+                         {formik.touched.password && formik.errors.password && <div className="text-red-500 pr-[47px] mt-3 sm:pr-[154px] text-xs sm:text-base">{formik.errors.password}</div>}
               
 
               <div className="flex space-x-7 mt-10 sm:mt-12">
@@ -100,7 +100,7 @@ function SignUp() {
          onBlur={formik.handleBlur}
                 />
                 </div>
-                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500 pr-[20px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.phoneNumber}</div>}
+                         {formik.touched.phoneNumber && formik.errors.phoneNumber && <div className="text-red-500 pr-[20px] sm:pr-[120px]  sm:mt-3 text-xs sm:text-base">{formik.errors.phoneNumber}</div>}
               
               <p className="text-gray-500 mt-10 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
                 By signing up, you agreed to our{" "}

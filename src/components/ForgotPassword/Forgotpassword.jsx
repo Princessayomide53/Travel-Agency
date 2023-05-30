@@ -53,7 +53,7 @@ function Forgotpassword() {
          onBlur={formik.handleBlur}
               />
             </div>
-            {formik.touched.email && formik.errors.email && <div className="text-red-500 mt-2 pl-[57px] sm:pr-[190px] text-xs sm:text-base">{formik.errors.email}</div>}
+            {formik.touched.email && formik.errors.email && <div className="text-red-500 mt-3 pl-[57px] sm:pl-[59px] text-xs sm:text-base">{formik.errors.email}</div>}
             <div className="flex justify-center pt-12 pb-2">
               <button type="submit" disabled={!formik.isValid || formik.isSubmitting} className="bg-blue-600 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12">
                
