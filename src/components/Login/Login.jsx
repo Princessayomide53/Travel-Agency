@@ -2,25 +2,22 @@ import React from "react";
 import travel from "../../assets/travel.png";
 import { SlLock } from "react-icons/sl";
 import { Link } from "react-router-dom";
-import { useFormik } from 'formik';
-import {basicSchema} from '../../Schema/schema';
-import {createUserWithEmailAndPassword} from 'firebase/auth';
-import {auth} from '../../firebase/Firebase.Config';
-
+import { useFormik } from "formik";
+import { basicSchema } from "../../Schema/schema";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebase/Firebase.Config";
 
 function Login() {
-
-  const Login = async ()  => {
-    await createUserWithEmailAndPassword(auth)
-  }
+  const Login = async () => {
+    await createUserWithEmailAndPassword(auth);
+  };
   const formik = useFormik({
     initialValues: {
-      email: '', 
-      password: '', 
-      
+      email: "",
+      password: "",
     },
     validationSchema: basicSchema,
-    onSubmit: (values, {resetForm}) => {
+    onSubmit: (values, { resetForm }) => {
       console.log(values);
       resetForm();
     },
@@ -56,7 +53,11 @@ function Login() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.email && formik.errors.email && <div className="text-red-500 flex justify-start items-start pr-[70px] mt-2 sm:pr-[190px] text-xs sm:text-base">{formik.errors.email}</div>}
+              {formik.touched.email && formik.errors.email && (
+                <div className="text-red-500 flex justify-start items-start pr-[70px] mt-2 sm:pr-[190px] text-xs sm:text-base">
+                  {formik.errors.email}
+                </div>
+              )}
 
               <div className="flex space-x-7 mt-12 sm:mt-14">
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
@@ -70,15 +71,25 @@ function Login() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.password && formik.errors.password && <div className="text-red-500 flex justify-start items-start pr-12 mt-3 sm:pr-40 text-xs sm:text-base">{formik.errors.password}</div>}
+              {formik.touched.password && formik.errors.password && (
+                <div className="text-red-500 flex justify-start items-start pr-12 mt-3 sm:pr-40 text-xs sm:text-base">
+                  {formik.errors.password}
+                </div>
+              )}
             </div>
-
 
             <div className="items-end justify-end sm:mt-12 mt-10 flex">
-              <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0 font-bold"><Link to="/forgotpassword">Forgot Password? </Link></p>
+              <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0 font-bold">
+                <Link to="/forgotpassword">Forgot Password? </Link>
+              </p>
             </div>
             <div className="flex justify-center pt-9">
-              <button disabled={!formik.isValid || formik.isSubmitting} type="submit" onClick={Login} className="bg-blue-700 rounded-xl sm:text-lg text-base text-white sm:w-[400px] font-semibold w-72 h-12">
+              <button
+                disabled={!formik.isValid || formik.isSubmitting}
+                type="submit"
+                onClick={Login}
+                className="bg-blue-700 rounded-xl sm:text-lg text-base text-white sm:w-[400px] font-semibold w-72 h-12"
+              >
                 Login
               </button>
             </div>

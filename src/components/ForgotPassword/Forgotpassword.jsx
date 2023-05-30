@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 import forgotpass from "../../assets/forgotpass.png";
 import { Link } from "react-router-dom";
-import { useFormik } from 'formik';
-import {validationSchema} from '../../Schema/still';
-
+import { useFormik } from "formik";
+import { validationSchema } from "../../Schema/still";
 
 function Forgotpassword() {
   const formik = useFormik({
     initialValues: {
-      email: '',
-      
+      email: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values, {resetForm}) => {
+    onSubmit: (values, { resetForm }) => {
       console.log(values);
       resetForm();
     },
   });
 
-  const [allow, setAllowed] = useState(false)
+  const [allow, setAllowed] = useState(false);
 
   return (
     <section>
@@ -51,20 +49,30 @@ function Forgotpassword() {
                 required
                 className="border-b-2 border-black sm:w-96 w-56  rounded-md h-8 pl-3"
                 onChange={formik.handleChange}
-         value={formik.values.email}
-         onBlur={formik.handleBlur}
+                value={formik.values.email}
+                onBlur={formik.handleBlur}
               />
             </div>
-            {formik.touched.email && formik.errors.email && <div className="text-red-500 mt-3 pl-[57px] sm:pl-[59px] text-xs sm:text-base">{formik.errors.email}</div>}
+            {formik.touched.email && formik.errors.email && (
+              <div className="text-red-500 mt-3 pl-[57px] sm:pl-[59px] text-xs sm:text-base">
+                {formik.errors.email}
+              </div>
+            )}
             <div className="flex justify-center pt-12 pb-2">
-          {/* <div style={{backgroundcolor: allow ? '111111'  : '212121'}}> */}
-              <button type="submit" disabled={!formik.isValid || formik.isSubmitting} className={`bg-blue-600 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12 ${!formik.isValid || formik.isSubmitting ? 'opacity-50 cursor-not-allowed disabled:true' : ''}`}>
-              
-               <Link to="/reset">Continue</Link> 
+              {/* <div style={{backgroundcolor: allow ? '111111'  : '212121'}}> */}
+              <button
+                type="submit"
+                disabled={!formik.isValid || formik.isSubmitting}
+                className={`bg-blue-600 rounded-xl sm:text-lg text-base font-semibold text-white w-full h-12 ${
+                  !formik.isValid || formik.isSubmitting
+                    ? "opacity-50 cursor-not-allowed disabled:true"
+                    : ""
+                }`}
+              >
+                <Link to="/reset">Continue</Link>
               </button>
               {/* </div> */}
-              </div>
-
+            </div>
           </form>
         </div>
       </div>
