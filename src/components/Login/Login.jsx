@@ -17,6 +17,12 @@ function Login() {
           formik.values.email,
           formik.values.password,
         );
+        // .then(() => {
+        //   const user = userCredential.user;
+        //   if (user.EmailVerification) {
+        //     const userEmail = user.formik.values.email
+        //   }
+        // });
       } catch (err) {
         console.error(err);
       }

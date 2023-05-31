@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoOctoface } from "react-icons/go";
 import { SlLock } from "react-icons/sl";
 import handshake from "../../assets/handshake.png";
-import { Link } from "react-router-dom";
-import { useFormik } from "formik";
+import { Link, Navigate } from "react-router-dom";
+import { Formik, useFormik } from "formik";
 import { validationSchema } from "../../Schema/index";
 import {
   createUserWithEmailAndPassword,
-  sendEmailVerification,
+  sendEmailVerification,updateProfile
 } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
-import { auth } from "../../firebase/Firebase.Config";
+import { auth, db } from "../../firebase/Firebase.Config";
+import { doc, setDoc } from "firebase/firestore";
 // import 'react-toastify.css/dist/React-Toastify.css';
 
 function SignUp() {
-  // const history = useHistory();
+
+  const [openModal, setOpenModal] = useState(false);
 
   const SignUp = async () => {
     try {
@@ -24,15 +26,28 @@ function SignUp() {
         formik.values.password,
         formik.values.fullName,
         formik.values.confirmPassword
-      ).then((userCredential) => {
-        sendEmailVerification(auth, currentUser).then(() => {});
+      ).then((userCredential) =>{
+        updateProfile(auth.currentUser, {displayName: formik.values.email});
 
-        const user = userCredential.user;
-      });
+        setDoc(doc (db, 'users', userCredential.user))
+        formik.values.email = formik.values.email,
+       formik.values.fullName = formik.values.fullName
+      })
+      auth.useDeviceLanguage();
+      sendEmailVerification(userCredential.user);
+      setOpenModal(true);
+      
+      // .then((userCredential) => {
+      //   sendEmailVerification(auth, currentUser).then(() => {
+      //     setOpenModal(true);
+      //   });
+      // });
+        // const user = userCredential.user;
+      
 
       toast.success("Account Sucessfully Created");
     } catch (err) {
-      console.error(err);
+      console.err(err);
       //  toast.error('failed to login')
     }
   };
@@ -158,6 +173,7 @@ function SignUp() {
                 >
                   Create an account
                 </button>{" "}
+                <sendEmailVerification open={openModal} oncClose={() => setOpenModal(false)}/>
                 <p className="text-gray-500 sm:text-sm text-sm font-sans font-semibold mt-[10px]">
                   Joined us before?{" "}
                   <span className="text-blue-600 font-semibold">
