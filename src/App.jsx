@@ -27,7 +27,6 @@ function App() {
         <Route path="/forgotpassword" element={ <Forgotpassword/> } />
         <Route path="/reset" element={ <Reset/> } />
       </Routes>  */}
-
     </>
   )
 }

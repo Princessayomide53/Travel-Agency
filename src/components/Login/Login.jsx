@@ -1,16 +1,31 @@
 import React from "react";
 import travel from "../../assets/travel.png";
 import { SlLock } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { basicSchema } from "../../Schema/schema";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/Firebase.Config";
 
 function Login() {
+  const navigate = useNavigate();
+  
   const Login = async () => {
-    await createUserWithEmailAndPassword(auth);
-  };
+      try {
+        await signInWithEmailAndPassword(
+          auth,
+          formik.values.email,
+          formik.values.password,
+        );
+      } catch (err) {
+        console.error(err);
+      }
+      {
+        navigate('/reset');
+      }
+    };
+
+    
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -24,6 +39,7 @@ function Login() {
   });
 
   return (
+    <>
     <div>
       <div className="flex flex-col sm:flex-row sm:justify-around">
         <div className="flex justify-center">
@@ -34,11 +50,11 @@ function Login() {
           />
         </div>
         <div>
-          <h1 className="text-black sm:text-5xl text-2xl font-serif text-center pt-5 sm:pt-[85px] font-bold">
+          <h1 className="text-black sm:text-5xl text-2xl font-serif text-center pt-7 sm:pt-[85px] font-bold">
             Login
           </h1>
           <form onSubmit={formik.handleSubmit}>
-            <div className=" sm:pt-16 pt-10  items-center flex flex-col pl-5 pr-5 sm:pl-0 sm:pr-0">
+            <div className=" sm:pt-16 pt-3  items-center flex flex-col pl-5 pr-5 sm:pl-0 sm:pr-0">
               <div className="flex space-x-7 mt-12 sm:mt-14">
                 <p className="font-bold sm:text-3xl text-xl mt-[5px] sm:mt-0">
                   @
@@ -78,12 +94,12 @@ function Login() {
               )}
             </div>
 
-            <div className="items-end justify-end sm:mt-12 mt-10 flex">
+            <div className="items-end justify-end flex-col sm:mt-12 mt-7 sm:pr-3 flex">
               <p className=" text-blue-600 text-xs sm:text-sm pr-14 sm:pr-0 font-bold">
                 <Link to="/forgotpassword">Forgot Password? </Link>
               </p>
             </div>
-            <div className="flex justify-center pt-9">
+            <div className="flex justify-center pt-5">
               <button
                 disabled={!formik.isValid || formik.isSubmitting}
                 type="submit"
@@ -93,10 +109,17 @@ function Login() {
                 Login
               </button>
             </div>
+            <div className="items-end justify-end flex-col sm:mt-7 sm:pr-3 mt-5 flex">
+              <p className=" text-blue-600 text-xs sm:text-sm pr-12 sm:pr-0 font-bold">
+                <Link to="/">Need an account? </Link>
+              </p>
+              </div>
           </form>
         </div>
       </div>
     </div>
+    {/* <ToastContainer /> */}
+    </>
   );
 }
 export default Login;

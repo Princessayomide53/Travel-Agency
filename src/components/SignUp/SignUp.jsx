@@ -5,12 +5,17 @@ import handshake from "../../assets/handshake.png";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import { validationSchema } from "../../Schema/index";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
+import { toast, ToastContainer } from "react-toastify";
 import { auth } from "../../firebase/Firebase.Config";
-// import * as Yup from 'yup'
+// import 'react-toastify.css/dist/React-Toastify.css';
 
 function SignUp() {
-  console.log(auth?.currentUser?.email);
+  // const history = useHistory();
+
   const SignUp = async () => {
     try {
       await createUserWithEmailAndPassword(
@@ -19,9 +24,16 @@ function SignUp() {
         formik.values.password,
         formik.values.fullName,
         formik.values.confirmPassword
-      );
+      ).then((userCredential) => {
+        sendEmailVerification(auth, currentUser).then(() => {});
+
+        const user = userCredential.user;
+      });
+
+      toast.success("Account Sucessfully Created");
     } catch (err) {
       console.error(err);
+      //  toast.error('failed to login')
     }
   };
 
@@ -115,7 +127,7 @@ function SignUp() {
                 <SlLock className="sm:text-3xl text-xl mt-[5px] sm:mt-0" />
                 <input
                   type="password"
-                  name="confimPassword"
+                  name="confirmPassword"
                   placeholder="Confirm Password"
                   className="border-b-2 border-black sm:w-96 w-56 pl-3 rounded-md h-8 mb-3 sm:mb-0"
                   onChange={formik.handleChange}
@@ -123,12 +135,11 @@ function SignUp() {
                   onBlur={formik.handleBlur}
                 />
               </div>
-              {formik.touched.confirmPassword &&
-                formik.errors.confirmPassword && (
-                  <div className="text-red-500 pr-[5px] mt-2 sm:mt-3 sm:pr-[100px] text-xs sm:text-base">
-                    {formik.errors.confirmPassword}
-                  </div>
-                )}
+              {formik.errors.confirmPassword && (
+                <div className="text-red-500 pr-[5px] mt-2 sm:mt-3 sm:pr-[100px] text-xs sm:text-base">
+                  {formik.errors.confirmPassword}
+                </div>
+              )}
 
               <p className="text-gray-500 mt-10 sm:text-sm text-xs font-sans pl-1 pr-1 sm:pl-0 sm:pr-0">
                 By signing up, you agreed to our{" "}
@@ -137,7 +148,7 @@ function SignUp() {
                 </span>
               </p>
 
-              <div className="flex-col flex space-x-10 mt-7 pb-3 sm:mb-0">
+              <div className="flex-col sm:flex-row flex space-x-10 mt-7 pb-3 sm:mb-0">
                 {" "}
                 <button
                   type="submit"
@@ -158,6 +169,7 @@ function SignUp() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 }
