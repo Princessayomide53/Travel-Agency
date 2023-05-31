@@ -27,7 +27,7 @@ function Login() {
         console.error(err);
       }
       {
-        navigate('/reset');
+        navigate('/landingpage');
       }
     };
 

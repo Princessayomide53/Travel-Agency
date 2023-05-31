@@ -4,6 +4,7 @@ import SignUp from '../components/SignUp/SignUp';
 import Forgotpassword from '../components/ForgotPassword/Forgotpassword';
 import Reset from '../components/ForgotPassword/Reset';
 import Login from '../components/Login/Login';
+import LandingPage from "../pages/LandingPage";
 
 const RouterPage = () => {
 
@@ -14,6 +15,7 @@ return (
 <Route path="/login" element={ <Login/> } />
 <Route path="/forgotpassword" element={ <Forgotpassword/> } />
 <Route path="/reset" element={ <Reset/> } />
+<Route path="/landingpage" element={ <LandingPage/> } />
 </Routes> 
 </Router>
 )

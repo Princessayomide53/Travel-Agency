@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .preloader {
     @apply bg-black w-full h-screen fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 overflow-hidden
 }
 
  .texts-container {
     @apply flex items-center justify-center h-[80px] w-[200px] overflow-hidden
+}
+
+.body {
+    @apply box-border p-0 m-0
 }
