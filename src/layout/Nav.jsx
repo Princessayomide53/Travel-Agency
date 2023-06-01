@@ -19,12 +19,12 @@ function Nav() {
         </div>
       </div>
       
-      <div className="flex flex-col   z-50 sm:hidden"> 
+      <div className="flex flex-col pt-2  z-50 sm:hidden"> 
       <div className="flex justify-between pr-5">
-        <h1 className="text-4xl text-[#212832] font-semibold pl-5 ">Jadoo <span className="bg-[#F1A501] rounded-full pt-0">o</span></h1>
+        <h1 className="text-4xl text-[#212832] font-semibold pl-5 h-[1px] z-10">Jadoo<span className=""></span></h1>
         <Hamburger  size={25} className="mr-5" direction="left" onToggle={() => setOpen(!open)}/>
         </div>
-        {!open &&
+        {open &&
         <div className="z-10 bg-white h-screen">
           <ul className="flex flex-col space-y-14 z-50 pl-5 pt-7  font-normal text-base text-[#212832]">
           <li>Destinations</li>
@@ -33,6 +33,7 @@ function Nav() {
           <li>Bookings</li>
         </ul></div>
 } 
+
       </div>
       </nav>
       
