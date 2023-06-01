@@ -17,7 +17,7 @@ function Hero() {
             className="sm:-mt-20 sm:w-[500px] sm: w-[220px] h-[350px] sm:h-[550px] -mt-[57px]"
           />
         </div>
-        <div className="z-50 sm:mt-10 sm:pl-10 flex sm:flex-row flex-col sm:justify-between">
+        <div className="z-50 sm:mt-10 sm:pl-[32px] flex sm:flex-row flex-col sm:justify-between">
           <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12">
             <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-2xl">
               Best Destinations Around the world
