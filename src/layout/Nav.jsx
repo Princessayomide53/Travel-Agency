@@ -7,10 +7,10 @@ function Nav() {
     <section>
       <nav>
         <div className="hidden sm:block">
-      <div className="flex sm:flex-row flex-col justify-around sm:pt-3 z-50 "> 
-        <h1 className="sm:text-4xl text-[#212832] font-semibold">Jadoo <span className="fill-[#F1A501] bg-inherit"></span></h1>
-        <div className="z-10 ">
-          <ul className="flex sm:space-x-36 z-50  font-normal sm:text-[15px] text-[#212832]">
+      <div className="flex sm:flex-row flex-col sm:pt-5 z-50 sm:justify-between"> 
+        <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28 ">Jadoo <span className="fill-[#F1A501] bg-inherit"></span></h1>
+      <div className="z-10 sm:pr-28 md:pr-12">
+          <ul className="flex sm:space-x-20 z-50 sm:pt-5 font-normal sm:text-[14px] text-[#212832]">
           <li>Destinations</li>
           <li>Hotels</li>
           <li>Flights</li>
