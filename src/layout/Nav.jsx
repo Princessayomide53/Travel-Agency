@@ -7,12 +7,12 @@ function Nav() {
     <section>
       <nav>
         <div className="hidden sm:block">
-          <div className="flex sm:flex-row flex-col sm:pt-5 z-50 sm:justify-between">
+          <div className="flex sm:flex-row flex-col sm:pt-3 z-50 sm:justify-between">
             <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28">
               Jadoo
             </h1>
             <div className="z-10 sm:pr-28 md:pr-12">
-              <ul className="flex sm:space-x-20 z-50 sm:pt-4 font-normal sm:text-[14px] text-[#212832]">
+              <ul className="flex sm:space-x-20 z-50 sm:pt-3 font-Poppins font-normal sm:text-[14px] text-[#212832]">
                 <li>Destinations</li>
                 <li>Hotels</li>
                 <li>Flights</li>
