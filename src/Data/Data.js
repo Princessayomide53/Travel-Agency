@@ -22,12 +22,12 @@ const Card = {
         title: "Full Europe",
         content: ""
       },
-      {
-        id: "4",
-        imgUrl: {custom},
-        title: "Full Europe",
-        content: ""
-      },
+    //   {
+    //     id: "4",
+    //     imgUrl: {custom},
+    //     title: "Full Europe",
+    //     content: ""
+    //   },
     ]
 }
 

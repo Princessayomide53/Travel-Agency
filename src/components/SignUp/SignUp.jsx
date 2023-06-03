@@ -68,7 +68,7 @@ function SignUp() {
 
   return (
     <section>
-      <div className="overflow-hidden flex sm:flex-row sm:justify-evenly flex-col">
+      <div className="overflow-hidden flex lg:flex-row lg:justify-evenly flex-col md:flex-col">
         <div className="flex justify-center">
           <img
             src={handshake}
@@ -77,7 +77,7 @@ function SignUp() {
           />
         </div>
         <div>
-          <h1 className="text-black sm:text-5xl text-2xl font-serif text-center pt-5 sm:pt-10 font-bold">
+          <h1 className="text-black md:-mt-7 sm:text-5xl text-2xl font-serif text-center pt-5 sm:pt-10 font-bold">
             Sign Up
           </h1>
           <form onSubmit={formik.handleSubmit}>
