@@ -107,37 +107,37 @@ function Categories() {
             Top Destination
           </h1>
         </div>
-        <div className="flex sm:flex-row flex-col items-center overflow-hidden sm:pb-5 lg:justify-evenly xl:justify-evenly sm: sm:mt-20 mt-16 relative z-20">
-          {Card.Image.map((data, id) => (
-            <div className="hover:shadow-2xl hover:drop-shadow-xl shadow-white" key={id}>
+        <div className="flex sm:flex-row space-y-14  sm:space-y-0 flex-col items-center sm:justify-evenly sm:mt-20 mt-16 relative z-20">
+          {Card.Image.map((data, id) => ( 
+            <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
               
             <div  className="z-50 flex items-center justify-evenly ">
             <center>
               <img
                 src={data.imgUrl}
                 alt=""
-                className="sm:w-[280px] sm:[270px]"
+                className="sm:w-[280px]  w-48 md:w-48"
               />
               </center>
               </div>
               
-              <div className="sm:w-[281px] bg-white rounded-b-2xl text-[#14183E] absolute top-[350px] z-10" >
-              <div className="sm: flex justify-between sm:py-2 sm:px-3 font-Poppins text-base">
+              <div className="bg-white lg:w-[193px] ml-0 rounded-b-xl pb-1 md:top-[210px] md:w-[200px] w-[193px] -mt-14 absolute lg:top-56 z-50" >
+              <div className="flex justify-between sm:py-2 sm:px-2  px-2 py-2 font-Poppins text-base">
                 <p>{data.title}</p>
                 <p>{data.money}</p>
               </div>
-                <div className="sm:mt-3 flex sm:space-x-3 sm:pl-2">
+                <div className="sm:mt-3 flex mt-3 space-x-4 px-2 sm:px-0 sm:space-x-2 sm:pl-2">
                   <IoIosSend />
-                  <p className="sm:text-base font-Poppins sm:-mt-1">{data.days}</p>
+                  <p className="sm:text-base font-Poppins sm:-mt-1 -mt-[2px]">{data.days}</p>
                 </div>
               </div>
               </div>
           ))}
           
         </div>
-        <div className="flex justify-end sm:-mt-60 lg:pr-5 xl:pr-20">
+        {/* <div className="flex justify-end sm:-mt-60 lg:pr-5 xl:pr-20">
             <img src={decore2} alt="" className="sm:w-10 h-32" />
-          </div>
+          </div> */}
       </div>
     </section>
   );
