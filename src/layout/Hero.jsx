@@ -17,16 +17,16 @@ function Hero() {
             className="sm:-mt-20 sm:w-[500px] sm: w-[220px] h-[350px] sm:h-[550px] -mt-[57px]"
           />
         </div>
-        <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col sm:justify-between">
+        <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col md:justify-between lg:">
           <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12">
-            <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-2xl">
+            <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-3xl">
               Best Destinations Around the world
             </p>
-            <h1 className="font-bold lg:text-6xl md:text-5xl sm:pt-3 pt-4 font-Volkhov sm:pl-0 text-[37px]">
+            <h1 className="font-bold lg:text-7xl md:text-5xl sm:pt-3 pt-4 font-Volkhov sm:pl-0 text-[37px]">
               Travel, enjoy
               <br /> and live a new <br /> and full life
             </h1>
-            <p className="sm:text-base sm:pt-5 font-normal md:text-xs text-[10px] pt-2 break-all font-Poppins flex-wrap">
+            <p className="lg:text-lg sm:pt-5 font-normal md:text-xs text-[10px] pt-2 break-all font-Poppins flex-wrap">
               Built Wicket longer admire do barton vanity itself do in it.
               <br /> Preferred to sportsmen it engrossed listening. Park gate
               <br /> sell they west hard for the.
@@ -37,7 +37,7 @@ function Hero() {
             <img
               src={Image}
               alt=""
-              className="lg:w-[450px] lg:h-[450px] sm:-mt-[450px] md:w-[300px] md:h-[300px] -mt-[120px] w-[300px] h-[300px]"
+              className="lg:w-[450px] xl:w-[600px] xl:h-[600px] lg:h-[450px] sm:-mt-[450px] md:w-[300px] md:h-[300px] -mt-[120px] w-[300px] h-[300px]"
             />
           </div>
         </div>

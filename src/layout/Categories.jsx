@@ -4,19 +4,19 @@ import wifi from "../assets/wifi.png";
 import plane from "../assets/plane.png";
 import events from "../assets/events.png";
 import custom from "../assets/custom.png";
-import decore2 from "../assets/decore2.png";
+// import decore2 from "../assets/decore2.png";
 import Card from "../Data/Data";
 import { IoIosSend } from "react-icons/io";
 
 function Categories() {
   return (
     <section>
-      <div className="sm:mt-5 mt-10">
+      <div className="sm:mt-10 mt-10">
         <div className="">
-          <p className="text-[#5E6282] text-center uppercase font-Poppins text-[11px]">
+          <p className="text-[#5E6282] font-bold text-center uppercase font-Poppins text-[11px] sm:text-base">
             Category
           </p>
-          <h1 className="text-[#14183E] text-center font-Volkhov text-xl mt-2">
+          <h1 className="text-[#14183E] text-center font-Volkhov text-xl sm:text-5xl  font-bold mt-3">
             We Offer Best Services
           </h1>
           <div className="flex justify-end -mt-14">
@@ -25,7 +25,7 @@ function Categories() {
         </div>
 
         <div className="">
-          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex  lg:justify-evenly mb-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 lg:justify-evenly mb-2">
             <div className="bg-white  lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
@@ -100,10 +100,10 @@ function Categories() {
         </div>
 
         <div className="sm:mt-28 mt-20">
-          <p className="text-[#5E6282] text-center uppercase font-Poppins text-[11px] sm:text-sm">
+          <p className="text-[#5E6282] text-center font-semibold uppercase font-Poppins text-[11px] sm:text-lg">
             Top Selling
           </p>
-          <h1 className="font-Volkhov text-3xl text-[#14183E] font-bold text-center mt-2">
+          <h1 className="font-Volkhov text-3xl sm:text-5xl text-[#14183E] font-bold text-center mt-2">
             Top Destination
           </h1>
         </div>
@@ -116,19 +116,19 @@ function Categories() {
               <img
                 src={data.imgUrl}
                 alt=""
-                className="sm:w-[280px]  w-48 md:w-48"
+                className="lg:w-[280px]  w-48 md:w-48"
               />
               </center>
               </div>
               
-              <div className="bg-white lg:w-[193px] ml-0 rounded-b-xl pb-1 md:top-[210px] md:w-[200px] w-[193px] -mt-14 absolute lg:top-56 z-50" >
-              <div className="flex justify-between sm:py-2 sm:px-2  px-2 py-2 font-Poppins text-base">
+              <div className="bg-white lg:w-[281px] ml-0 rounded-b-xl pb-1 md:top-[210px] xl:top-[383px] md:w-[200px] w-[193px] -mt-14 absolute lg:top-[400px] z-50" >
+              <div className="flex justify-between sm:py-2 sm:px-2  px-2 py-2 font-Poppins text-base lg:text-lg">
                 <p>{data.title}</p>
                 <p>{data.money}</p>
               </div>
                 <div className="sm:mt-3 flex mt-3 space-x-4 px-2 sm:px-0 sm:space-x-2 sm:pl-2">
                   <IoIosSend />
-                  <p className="sm:text-base font-Poppins sm:-mt-1 -mt-[2px]">{data.days}</p>
+                  <p className="text-base lg:text-lg font-Poppins sm:-mt-1 -mt-[2px]">{data.days}</p>
                 </div>
               </div>
               </div>
