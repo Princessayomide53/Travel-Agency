@@ -107,7 +107,7 @@ function Categories() {
             Top Destination
           </h1>
         </div>
-        <div className="flex sm:flex-row space-y-14  sm:space-y-0 flex-col items-center sm:justify-evenly sm:mt-20 mt-16 relative z-20">
+        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center sm:justify-evenly sm:mt-20 mt-16 relative z-20">
           {Card.Image.map((data, id) => ( 
             <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
               
@@ -121,7 +121,7 @@ function Categories() {
               </center>
               </div>
               
-              <div className="bg-white lg:w-[281px] ml-0 rounded-b-xl pb-1 md:top-[210px] xl:top-[383px] md:w-[200px] w-[193px] -mt-14 absolute lg:top-[400px] z-50" >
+              <div className="bg-white lg:w-[281px] ml-0 rounded-b-xl pb-1 md:top-[265px] xl:top-[383px] md:w-[200px] w-[193px] -mt-14 absolute lg:top-[400px] z-50" >
               <div className="flex justify-between sm:py-2 sm:px-2  px-2 py-2 font-Poppins text-base lg:text-lg">
                 <p>{data.title}</p>
                 <p>{data.money}</p>

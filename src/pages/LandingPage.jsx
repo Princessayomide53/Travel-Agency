@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../layout/Hero';
 import Ease from '../layout/Ease';
 import Categories from '../layout/Categories';
+import Testimonials from '../layout/Testimonials';
 
 function LandingPage() {
   return (
@@ -9,6 +10,7 @@ function LandingPage() {
         <Hero />
         <Categories />
         <Ease />
+        <Testimonials />
     </div>
   )
 }

@@ -14,7 +14,7 @@ function Ease() {
   return (
     <>
       <div className="pt-28 flex sm:flex-row sm:justify-between flex-col items-center">
-        <div className="xl:pl-36 lg:pl-14 md:pl-14">
+        <div className="xl:pl-36 lg:pl-14 md:pl-[70px]">
           <p className="text-[#5E6282] lg:text-xl md:text-base text-lg font-Poppins">
             Easy and Fast
           </p>
@@ -39,18 +39,18 @@ function Ease() {
           </div>
 
         </div>
-        <div className="bg-white lg:mr-14 w-[220px] h-64 xl:mr-36 md:mr-14 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 drop-shadow-xl backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
+        <div className="bg-white lg:mr-14 w-[220px] h-64 xl:mr-36 md:mr-[70px] mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 drop-shadow-xl backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
               <div className="flex justify-center pt-3">
               <img src={greece} alt="" className="lg:w-60 lg:h-32 md:w-40 md:h-18 w-40 h-20"/>
               </div>
-              <p className="sm:mt-3 pt-4 text-base sm:pl-5 font-bold font-Poppins text-[#080809] pl-7">Trip to greece</p>
-              <p className="sm:mt-2 text-xs lg:text-sm md:text-xs  text-[#84829A] pt-4 sm:pl-5 pl-7">14-29 June | by Robbin Joseph</p>
-              <div className="flex lg:mt-3 space-x-7 sm:pl-5  pl-7 md:pt-5 pt-4">
+              <p className="sm:mt-3  text-base sm:pl-5 font-bold font-Poppins text-[#080809] mt-3 pl-7">Trip to greece</p>
+              <p className="sm:mt-2 text-xs lg:text-sm md:text-xs text-[#84829A] sm:pl-5 pl-7 mt-3">14-29 June | by Robbin Joseph</p>
+              <div className="flex sm:mt-3 space-x-7 sm:pl-5  pl-7 mt-5">
                 <img src={leaf} alt="" className="w-7 h-7"/>
                 <img src={map} alt="" className="w-7 h-7"/>
                 <img src={send} alt="" className="w-7 h-7"/>
               </div>
-                <div className="lg:pt-5 sm:pl-5 pl-7 md:pt-7 flex space-x-5 pt-5"><img src={building} alt="" className="w-3 h-3" />
+                <div className="lg:mt-5 sm:pl-5 pl-7 md:mt-7 mt-7 flex space-x-5"><img src={building} alt="" className="w-3 h-3" />
                 <p className="lg:text-sm md:text-xs text-xs text-[#84829A] -mt-1">24 people going</p>
                 </div>
             </div>
