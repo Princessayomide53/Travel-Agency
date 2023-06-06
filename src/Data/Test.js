@@ -1,6 +1,6 @@
 import profile from "../assets/profile.png";
 
-const Testimonials = {
+const Test = {
   Data: [
     {
       id: "1",
@@ -28,4 +28,4 @@ const Testimonials = {
       },
   ],
 };
-export default Testimonials;
+export default Test;
