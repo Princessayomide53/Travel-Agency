@@ -25,7 +25,7 @@ function Categories() {
         </div>
 
         <div className="">
-          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 lg:justify-evenly mb-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 lg:justify-around xl:justify-center xl:space-x-44 mb-2">
             <div className="bg-white  lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
@@ -84,7 +84,7 @@ function Categories() {
                 <img
                   src={custom}
                   alt=""
-                  className="sm:w-14 sm:h-12 mt-7 sm:mt-7 w-10 h-12"
+                  className="sm:w-12 sm:h-12 mt-7 sm:mt-7 w-10 h-12"
                 />
               </div>
               <p className="pt-4 font-bold text-[#1E1D4C] sm:text-sm text-xs text-center">
@@ -107,7 +107,7 @@ function Categories() {
             Top Destination
           </h1>
         </div>
-        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center sm:justify-evenly sm:mt-20 mt-16 relative z-20">
+        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around sm:mt-20 mt-16 relative z-20">
           {Card.Image.map((data, id) => ( 
             <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
               
@@ -116,7 +116,7 @@ function Categories() {
               <img
                 src={data.imgUrl}
                 alt=""
-                className="lg:w-[280px]  w-48 md:w-48"
+                className="lg:w-[280px]  w-52 md:w-48"
               />
               </center>
               </div>

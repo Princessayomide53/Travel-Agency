@@ -6,7 +6,7 @@ import Testimonials from '../layout/Testimonials';
 
 function LandingPage() {
   return (
-    <div>
+    <div className=''>
         <Hero />
         <Categories />
         <Ease />

@@ -3,7 +3,8 @@ import Nav from "./Nav";
 import decore from "../../src/assets/decore.png";
 import Image from "../../src/assets/Image.png";
 // import { Cross as Hamburger } from 'hamburger-react'
-
+import '../../src/App.css';
+// import Animista, { AnimistaTypes } from "react-animista";
 
 function Hero() {
   return (
@@ -18,6 +19,7 @@ function Hero() {
           />
         </div>
         <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col md:justify-between lg:">
+        {/* <Animista  duration="2s" delay="1s"> */}
           <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12">
             <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-3xl">
               Best Destinations Around the world
@@ -33,6 +35,7 @@ function Hero() {
             </p>
             <div><button className="text-white drop-shadow-md shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button></div>
           </div>
+          {/* </Animista> */}
           <div className="z-20 pr-20 lg:pr-[120px]">
             <img
               src={Image}

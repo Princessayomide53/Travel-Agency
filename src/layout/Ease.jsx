@@ -13,8 +13,8 @@ import building from "../assets/building.png";
 function Ease() {
   return (
     <>
-      <div className="pt-28 flex sm:flex-row sm:justify-between flex-col items-center">
-        <div className="xl:pl-36 lg:pl-14 md:pl-[70px]">
+      <div className="pt-28 flex sm:flex-row sm:justify-around lg:space-x-28 xl:space-x-80 flex-col items-center">
+        <div className="">
           <p className="text-[#5E6282] lg:text-xl md:text-base text-lg font-Poppins">
             Easy and Fast
           </p>
@@ -39,7 +39,7 @@ function Ease() {
           </div>
 
         </div>
-        <div className="bg-white lg:mr-14 w-[220px] h-64 xl:mr-36 md:mr-[70px] mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 drop-shadow-xl backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
+        <div className="bg-white w-[220px] h-64 mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 drop-shadow-xl backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
               <div className="flex justify-center pt-3">
               <img src={greece} alt="" className="lg:w-60 lg:h-32 md:w-40 md:h-18 w-40 h-20"/>
               </div>
