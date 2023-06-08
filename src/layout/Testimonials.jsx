@@ -6,10 +6,6 @@ import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
 import image5 from "../assets/image5.png";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
-import send1 from "../assets/send1.png";
-import decore3 from "../assets/decore3.png";
-import decore4 from "../assets/decore4.png";
-import decore5 from "../assets/decore5.png"
 
 function Testimonials() {
   return (
@@ -46,7 +42,7 @@ function Testimonials() {
             </div>
           ))}
         </div>
-        <div className="mt-48 xl:ml-72 lg:ml-72 space-y-10">
+        <div className="mt-48 xl:ml-72 lg:ml-72 space-y-10 md:ml-40">
           <SlArrowUp size={25} /> <SlArrowDown size={25} />
         </div>
       </div>
@@ -82,40 +78,8 @@ function Testimonials() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute lg:top-44 lg:right-12 xl:right-48 z-20">
-            <img src={send1} alt="" className="ml-56 -mt-10" />
-          </div>
-          <div className="flex justify-center">
-            <div
-              className="xl:w-[980px] lg:w-[850px] bg-[#DFD7F9] lg:mt-40  rounded-tl-[70px]
-           rounded-b-3xl rounded-tr-2xl lg:h-[310px] mb-20"
-            >
-              <div className="flex items-end justify-end">
-                <img src={decore4} alt="" className=" lg:w-52 lg:h-60" />
-              </div>
-              <img
-                src={decore3}
-                alt=""
-                className="lg:w-56 lg:h-44 lg:-mt-28 ml-5"
-              />
-              <h1
-                  className="text-[#5E6282] lg:text-2xl xl:text-4xl lg:-mt-60 text-center
-                 font-bold font-Poppins"
-                >
-                  Subcribe to get information, latest news and other news <br />{" "}
-                  Interesting offers about Coham
-                </h1>
-               <div className="flex justify-center lg:mt-[69px] lg:gap-10">
-                <input type="text"className="w-60 h-12 pl-5 rounded-md focus:outline-blue-400"  placeholder="Your Email"/>
-                <button disabled className="bg-gradient-to-br  from-[#FF7D68] to-[#FF946D] px-7 py-3 rounded-2xl text-white">Subscribe</button>
-               </div> 
-            </div>
-          </div>
-        </div>
-        <div className="-mt-40 flex justify-end xl:mr-28 lg:mr-2"><img src={decore5} alt="" className="w-32 h-32"/></div>
-      </article>
-    </section>
+</article>   
+ </section>
   );
 }
 
