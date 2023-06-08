@@ -14,12 +14,12 @@ import decore5 from "../assets/decore5.png"
 function Testimonials() {
   return (
     <section>
-      <div className="sm:flex justify-around relative mt-20">
+      <div className="sm:flex justify-around xl:space-x-48 relative mt-20">
         <div className="mt-24 ">
-          <p className="text-sm sm:text-base uppercase text-[#5E6282] font-Poppins">
+          <p className="text-sm sm:text-lg uppercase text-[#5E6282] font-Poppins">
             Testimonials
           </p>
-          <h1 className="lg:text-5xl xl:text-6xl md:text-2xl text-[#14183E] font-bold md:mt-5 font-Volkhov">
+          <h1 className="lg:text-5xl xl:text-6xl md:text-2xl xl:leading-normal   text-[#14183E] font-bold md:mt-5 font-Volkhov">
             What People say
             <br /> About Us
           </h1>
@@ -53,7 +53,7 @@ function Testimonials() {
 
       <article>
         <div className="mt-80 md:mt-56">
-          <div className="flex lg:justify-evenly md:justify-center md:space-x-14 justify-center space-x-8">
+          <div className="flex lg:justify-evenly xl:justify-around md:justify-center md:space-x-14 justify-center space-x-8">
             <img
               src={image1}
               alt=""
@@ -100,7 +100,7 @@ function Testimonials() {
                 className="lg:w-56 lg:h-44 lg:-mt-28 ml-5"
               />
               <h1
-                  className="text-[#5E6282] lg:text-2xl xl:text-3xl lg:-mt-60 text-center
+                  className="text-[#5E6282] lg:text-2xl xl:text-4xl lg:-mt-60 text-center
                  font-bold font-Poppins"
                 >
                   Subcribe to get information, latest news and other news <br />{" "}

@@ -25,8 +25,10 @@ function Categories() {
         </div>
 
         <div className="">
-          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 lg:justify-around xl:justify-center xl:space-x-44 mb-2">
-            <div className="bg-white  lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 
+          lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2">
+            <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg 
+            shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
                   src={wifi}
@@ -43,7 +45,7 @@ function Categories() {
                 <br /> vanity itself do in it.
               </p>
             </div>
-            <div className="bg-white lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
                   src={plane}
@@ -61,7 +63,7 @@ function Categories() {
                 west hard for the
               </p>
             </div>
-            <div className="bg-white lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
                   src={events}
@@ -79,7 +81,7 @@ function Categories() {
                 <br /> engrossed listening.{" "}
               </p>
             </div>
-            <div className="bg-white  lg:w-44 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+            <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
                   src={custom}
@@ -107,7 +109,7 @@ function Categories() {
             Top Destination
           </h1>
         </div>
-        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around sm:mt-20 mt-16 relative z-20">
+        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around xl:space-x-5 sm:mt-20 mt-16 relative z-20">
           {Card.Image.map((data, id) => ( 
             <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
               

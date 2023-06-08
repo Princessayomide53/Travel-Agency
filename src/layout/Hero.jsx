@@ -20,7 +20,7 @@ function Hero() {
         </div>
         <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col md:justify-between lg:">
         {/* <Animista  duration="2s" delay="1s"> */}
-          <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12">
+          <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12 xl:pl-16">
             <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-3xl">
               Best Destinations Around the world
             </p>
