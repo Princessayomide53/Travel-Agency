@@ -39,7 +39,7 @@ function Ease() {
           </div>
 
         </div>
-        <div className="bg-white w-[220px] h-64 mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 drop-shadow-xl backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
+        <div className="bg-white w-[220px] h-64 mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 sm:drop-shadow-xl sm:backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
               <div className="flex justify-center pt-3">
               <img src={greece} alt="" className="lg:w-60 lg:h-32 md:w-40 md:h-18 w-40 h-20"/>
               </div>

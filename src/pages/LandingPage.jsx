@@ -4,6 +4,7 @@ import Ease from '../layout/Ease';
 import Categories from '../layout/Categories';
 import Testimonials from '../layout/Testimonials';
 import Subscribe from '../layout/Subscribe';
+import Footer from '../layout/Footer';
 
 function LandingPage() {
   return (
@@ -12,7 +13,8 @@ function LandingPage() {
         <Categories />
         <Ease />
         <Testimonials />
-        <Subscribe />
+        <Subscribe /> 
+        <Footer />
     </div>
   )
 }
