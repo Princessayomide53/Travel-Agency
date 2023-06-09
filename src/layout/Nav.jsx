@@ -18,7 +18,7 @@ function Nav() {
             
 
             <div className="z-10 sm:pr-28 md:pr-12 xl:pr-24">
-              <ul className="flex sm:space-x-20 z-50 sm:pt-3 font-Poppins font-normal sm:text-lg text-[14px] text-[#212832]">
+              <ul className="flex sm:space-x-20 z-50 sm:pt-3 font-Poppins font-normal sm:text-lg md:text-sm text-[14px] text-[#212832]">
                 <li>Destinations</li>
                 <li>Hotels</li>
                 <li>Flights</li>
