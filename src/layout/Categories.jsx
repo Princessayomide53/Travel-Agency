@@ -11,7 +11,7 @@ import { IoIosSend } from "react-icons/io";
 function Categories() {
   return (
     <section>
-      <div className="sm:mt-10 mt-10">
+      <div className="sm:mt-10 mt-10 md:mt-2">
         <div className="">
           <p className="text-[#5E6282] font-bold text-center uppercase font-Poppins text-[11px] sm:text-base">
             Category
@@ -25,7 +25,7 @@ function Categories() {
         </div>
 
         <div className="">
-          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:place-items-center gap-10 lg:flex lg:gap-1 
+          <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:gap-28 md:place-items-center gap-10 lg:flex lg:gap-1 
           lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2">
             <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg 
             shadow-2xl shadow-white">
