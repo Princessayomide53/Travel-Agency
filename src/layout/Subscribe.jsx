@@ -18,7 +18,7 @@ function Subscribe() {
               <img
                 src={decore3}
                 alt=""
-                className="lg:w-56 lg:h-44 lg:-mt-28 xl:-mt-24 ml-5 md:-mt-2 md:w-44 md:h-36 w-32 h-28 mt-3"
+                className="lg:w-56 lg:h-44 lg:-mt-28 xl:-mt-28 ml-5 md:-mt-2 md:w-44 md:h-36 w-32 h-28 mt-3"
               />
                <h1
                   className="text-[#5E6282] text-xs lg:text-2xl xl:text-3xl lg:-mt-60 md:-mt-[200px] -mt-48 md:text-xl text-center
