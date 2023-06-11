@@ -1,5 +1,6 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -19,10 +20,10 @@ function Nav() {
 
             <div className="z-10 sm:pr-28 md:pr-12 xl:pr-24">
               <ul className="flex sm:space-x-20 z-50 sm:pt-3 font-Poppins font-normal lg:text-lg md:text-sm text-[14px] text-[#212832]">
-                <li>Destinations</li>
-                <li>Hotels</li>
-                <li>Flights</li>
-                <li>Bookings</li>
+              <li><Link to ="/destinations">Destinations </Link></li>
+               <li><Link to ="/hotels">Hotels</Link></li>
+               <li><Link to ="flights">Flights</Link></li>
+               <li><Link to ="/bookings">Bookings</Link></li>
               </ul>
             </div>
           </div>
@@ -43,10 +44,10 @@ function Nav() {
           {open && (
             <div className="z-10 bg-white h-screen">
               <ul className="flex flex-col space-y-14 z-50 pl-5 pt-7  font-normal text-base text-[#212832]">
-                <li>Destinations</li>
-                <li>Hotels</li>
-                <li>Flights</li>
-                <li>Bookings</li>
+              <li><Link to ="/destinations">Destinations </Link></li>
+               <li><Link to ="/hotels">Hotels</Link></li>
+               <li><Link to ="flights">Flights</Link></li>
+               <li><Link to ="/bookings">Bookings</Link></li>
               </ul>
             </div>
           )}
