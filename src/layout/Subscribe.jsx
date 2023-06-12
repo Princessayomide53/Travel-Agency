@@ -9,7 +9,7 @@ function Subscribe() {
   return (
     <>
         <div className='relative'>
-<div className='absolute top-24 xl:right-44 lg:right-16 right-5 md:right-16 pro:right-32'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
+<div className='absolute top-24 xl:right-44 lg:right-16 right-5 md:right-16 pro:right-32 2xl:right-44'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
             <div className='flex justify-center'>
             <div className='bg-[#DFD7F9] lg:w-[850px] w-[330px] h-[257px] md:w-[620px] md:h-[280px] lg:h-[310px] 
              xl:w-[890px] xl:h-[315px] rounded-tl-[70px] mt-24 sm:mt-28 rounded-b-3xl rounded-tr-2xl '>
