@@ -35,7 +35,7 @@ function Subscribe() {
             </div></div>
         </div>
 
-<div className='flex justify-center sm:mt-24'>
+<div className='flex justify-center sm:mt-24 mt-16'>
 <hr style={{width: "85%", height: "2px"}}/>
 </div>
 
