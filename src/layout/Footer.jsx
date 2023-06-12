@@ -5,7 +5,7 @@ function Footer() {
   return (
   <>
   <footer>
-    <div className='grid lg:grid-cols-5 mt-24 lg:pl-12 grid-cols-2 place-content-center place-items-center pl-5  lg:pr-12  xl:pl-16 xl:pr-16 md:pl-16 md:pr-12 md:grid-cols-3 md:place-items-center'>
+    <div className='grid lg:grid-cols-5 mt-14 lg:pl-12 grid-cols-2 place-content-center place-items-center pl-5  lg:pr-12  xl:pl-16 xl:pr-16 md:pl-16 md:pr-12 md:grid-cols-3 md:place-items-center'>
       {Foot.Card.map((item, id) => (
         <div key={id} className=''>
           <div>

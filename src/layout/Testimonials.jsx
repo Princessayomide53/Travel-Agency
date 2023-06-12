@@ -10,7 +10,7 @@ import { SlArrowUp, SlArrowDown } from "react-icons/sl";
 function Testimonials() {
   return (
     <section>
-      <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-20 flex flex-col ">
+      <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-12 flex flex-col ">
         <div className="mt-24 text-center">
           <p className="text-sm sm:text-lg uppercase text-[#5E6282] font-bold font-Poppins">
             Testimonials

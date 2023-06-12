@@ -9,9 +9,10 @@ function Subscribe() {
   return (
     <>
         <div className='relative'>
-<div className='absolute top-24 xl:right-48 lg:right-16 right-5 md:right-16'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
+<div className='absolute top-24 xl:right-44 lg:right-16 right-5 md:right-16 pro:right-32'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
             <div className='flex justify-center'>
-            <div className='bg-[#DFD7F9] lg:w-[850px] w-[330px] h-[257px] md:w-[620px] md:h-[280px] lg:h-[310px]  xl:w-[870px] xl:h-[320px] rounded-tl-[70px] mt-24 sm:mt-28 rounded-b-3xl rounded-tr-2xl '>
+            <div className='bg-[#DFD7F9] lg:w-[850px] w-[330px] h-[257px] md:w-[620px] md:h-[280px] lg:h-[310px] 
+             xl:w-[890px] xl:h-[315px] rounded-tl-[70px] mt-24 sm:mt-28 rounded-b-3xl rounded-tr-2xl '>
             <div className="flex items-end justify-end">
                 <img src={decore4} alt="" className=" lg:w-52 lg:h-60 w-32 h-32 md:w-32 md:h-32 md:mt-2" />
               </div> 
@@ -21,7 +22,7 @@ function Subscribe() {
                 className="lg:w-56 lg:h-44 lg:-mt-28 xl:-mt-28 ml-5 md:-mt-2 md:w-44 md:h-36 w-32 h-28 mt-3"
               />
                <h1
-                  className="text-[#5E6282] text-xs lg:text-2xl xl:text-3xl lg:-mt-60 md:-mt-[200px] -mt-48 md:text-xl text-center
+                  className="text-[#5E6282] text-xs lg:text-2xl xl:text-[32px] lg:-mt-60 md:-mt-[200px] -mt-48 md:text-xl text-center
                  font-bold font-Poppins"
                 >
                   Subcribe to get information, latest news and other news <br />{" "}
@@ -34,8 +35,9 @@ function Subscribe() {
             </div></div>
         </div>
 
-
-
+<div className='flex justify-center sm:mt-24'>
+<hr style={{width: "85%", height: "2px"}}/>
+</div>
 
 
 

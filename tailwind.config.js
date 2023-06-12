@@ -8,12 +8,12 @@ export default {
     fontFamily: {
       'Volkhov': ['Volkhov', 'serif'],
       'Poppins': ['Poppins', 'serif']
-    }
-
-    // fontFamily: {
-    //  'Open Sans': ['Open Sans', "sans-serif"]
-    // }
-    // extend: {},
+    },
+    extend: {
+      screens: {
+        'pro' : '912px'
+      }
+    },
   },
   plugins: [],
 }
