@@ -5,11 +5,15 @@ import Image from "../../src/assets/Image.png";
 import '../../src/App.css';
 // import Animista, { AnimistaTypes } from "react-animista";
 import {BiPlay} from "react-icons/bi";
-// import Videoplayer from "./Videoplayer";
+import tour from "../video/tour.mp4";
 
 
 function Hero() {
+  const [isPlaying, setIsPlaying] = useState(false);
 
+  const handleClick = () => {
+    setIsPlaying(!isPlaying)
+  }
 
 
   return (
@@ -39,11 +43,14 @@ function Hero() {
               <br /> sell they west hard for the.
             </p>
             <div className="space-x-20"><button className="text-white drop-shadow-md shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button>
-            <button className="px-5 rounded-full py-5 bg-[#DF6951]"><BiPlay className="text-white sm:text-xl"/> 
-            {/* <Videoplayer /> */}
-        </button></div>
+
+            {isPlaying ? (<video className="object-cover w-full h-full" src={tour}
+    controls autoPlay/>) : ( <button className="px-5 rounded-full py-5 bg-[#DF6951]" onClick={handleClick}>
+      <BiPlay className="text-white sm:text-xl"/> </button>)}
+        </div>
           </div>
-          {/* </Animista> */}
+
+
           <div className="z-20 pr-20 lg:pr-[120px]">
             <img
               src={Image}
