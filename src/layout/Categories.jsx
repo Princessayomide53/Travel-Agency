@@ -8,6 +8,7 @@ import custom from "../assets/custom.png";
 import Card from "../Data/Data";
 import { IoIosSend } from "react-icons/io";
 
+
 function Categories() {
   return (
     <section>

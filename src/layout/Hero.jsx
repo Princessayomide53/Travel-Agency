@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import decore from "../../src/assets/decore.png";
 import Image from "../../src/assets/Image.png";
-// import { Cross as Hamburger } from 'hamburger-react'
 import '../../src/App.css';
 // import Animista, { AnimistaTypes } from "react-animista";
+import {BiPlay} from "react-icons/bi";
+// import Videoplayer from "./Videoplayer";
+
 
 function Hero() {
+
+
+
   return (
     <>
       <section>
@@ -33,7 +38,10 @@ function Hero() {
               <br /> Preferred to sportsmen it engrossed listening. Park gate
               <br /> sell they west hard for the.
             </p>
-            <div><button className="text-white drop-shadow-md shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button></div>
+            <div className="space-x-20"><button className="text-white drop-shadow-md shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button>
+            <button className="px-5 rounded-full py-5 bg-[#DF6951]"><BiPlay className="text-white sm:text-xl"/> 
+            {/* <Videoplayer /> */}
+        </button></div>
           </div>
           {/* </Animista> */}
           <div className="z-20 pr-20 lg:pr-[120px]">
