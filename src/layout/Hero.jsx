@@ -42,16 +42,16 @@ function Hero() {
               <br /> Preferred to sportsmen it engrossed listening. Park gate
               <br /> sell they west hard for the.
             </p>
-            <div className="space-x-20"><button className="text-white drop-shadow-md shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button>
+            <div className="space-x-20 flex"><button className="text-white  shadow-md drop-shadow-2xl shadow-[#f1A501] bg-[#F1A501] text-[10px] sm:text-base px-5 py-2 rounded-md mt-3 sm:mt-5">Find out more</button>
 
-            {isPlaying ? (<video className="object-cover w-full h-full" src={tour}
-    controls autoPlay/>) : ( <button className="px-5 rounded-full py-5 bg-[#DF6951]" onClick={handleClick}>
-      <BiPlay className="text-white sm:text-xl"/> </button>)}
+            {isPlaying ? (<div className="relative w-[600px] h-[180px] z-20 -mt-[500px]"> <video className="object-cover w-full h-screen" src={tour}
+    controls autoPlay/></div>) : ( <div className="flex gap-4"><button className="px-3 mt-5 rounded-full h-10 bg-[#DF6951]" onClick={handleClick}>
+      <BiPlay className="text-white sm:text-xl"/> </button> <p className="lg:mt-7 font-Poppins">Play Demo</p></div>)}
         </div>
           </div>
 
 
-          <div className="z-20 pr-20 lg:pr-[120px]">
+          <div className="pr-20 lg:pr-[120px]">
             <img
               src={Image}
               alt=""

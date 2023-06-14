@@ -7,6 +7,7 @@ import image4 from "../assets/image4.png";
 import image5 from "../assets/image5.png";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
 import '../styles/app.css';
+import {RxDotFilled} from "react-icons/rx";
 
 
 
@@ -25,6 +26,10 @@ setCurrentIndex(newIndex);
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
        }
+
+       const goToSlide = (index) => {
+        setCurrentIndex(index);
+       }
     
   return (
     <section>
@@ -37,8 +42,13 @@ setCurrentIndex(newIndex);
             What People say
             <br /> About Us
           </h1>
+          <div className="flex mt-5 justify-center">
+          {Test.Data.map((index) => <div key={index} className="px-2 "><RxDotFilled onClick={ () => goToSlide(index)}/></div>)}</div>
         </div>
         
+
+
+
         <div className={`${Test.Data[currentIndex]}`}>
           {Test.Data.map((items, id) => (
             <div
