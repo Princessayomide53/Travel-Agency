@@ -14,6 +14,12 @@
 .body {
     @apply box-border p-0 m-0
 }
+
+/* .container {
+  @apply 
+} */
+
+
 .slide-in-fwd-bl {
 	-webkit-animation: slide-in-fwd-bl 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-fwd-bl 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

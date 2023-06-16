@@ -1,4 +1,6 @@
 import profile from "../assets/profile.png";
+import molly from "../assets/molly.png";
+import helen from "../assets/helen.jpg";
 
 const Test = {
   Data: [
@@ -12,7 +14,7 @@ const Test = {
     },
     {
         id: "2",
-        imgUrl: profile,
+        imgUrl: helen,
         content:
           "“The holiday of a life time - our gulet adventure in the Dodecanese Greek Islands was without a doubt our favourite family trip.”",
           name: "Suzy Lautze",
@@ -20,7 +22,7 @@ const Test = {
       },
       {
         id: "1",
-        imgUrl: profile,
+        imgUrl: molly,
         content:
           "“Excellent. Our best tour operator yet. The itinerary was carefully thought through and well balanced. The trip represented great travel for the cost.”",
           name: "Molly",

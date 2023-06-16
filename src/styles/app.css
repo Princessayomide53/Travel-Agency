@@ -10,3 +10,25 @@
   .fade-in {
     animation: fadeIn 0.5s ease-in;
   }
+
+
+  .cards {
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
+  }
+  
+  .card:hover .cards {
+    -webkit-transform: translate3d(30px, 30px, 30px);
+  }
+
+  .card:hover .cards {
+     display: block;
+  }
+  
+
+ .card:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }

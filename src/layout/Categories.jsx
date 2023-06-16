@@ -7,6 +7,7 @@ import custom from "../assets/custom.png";
 // import decore2 from "../assets/decore2.png";
 import Card from "../Data/Data";
 import { IoIosSend } from "react-icons/io";
+import '../styles/app.css';
 
 
 function Categories() {
@@ -28,8 +29,10 @@ function Categories() {
         <div className="">
           <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:gap-28 md:place-items-center gap-10 lg:flex lg:gap-1 
           lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2  relative">
-            <div className="bg-white z-20 lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg 
-            shadow-2xl shadow-white">
+
+            <div className="card cursor-pointer">
+            <div className="bg-white lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg">
+              <div className="card2">
               <div className="flex justify-center">
                 <img
                   src={wifi}
@@ -40,15 +43,19 @@ function Categories() {
               <p className="pt-5 font-semibold sm:text-sm text-xs text-[#1E1D4C]  text-center">
                 Calculated weather
               </p>
-              <p className="text-center sm:text-sm text-xs text-[#5E6282] pt-3">
+              <p className="text-center sm:text-sm pb-9 text-xs text-[#5E6282] pt-3 ">
                 Built Wicket longer
                 <br /> admire do barton
                 <br /> vanity itself do in it.
               </p>
+              </div>
+               </div>  
+                 <div className="absolute top-36 cards -z-10 xl:left-[30px] lg:left-[7px] sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>    
             </div>
-              <div className="absolute top-44 hidden left-14 sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+            
 
-            <div className="bg-white lg:w-44 z-20 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+            <div className="card cursor-pointer">
+            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg">
               <div className="flex justify-center">
                 <img
                   src={plane}
@@ -65,10 +72,13 @@ function Categories() {
                 <br /> Park gate sell they <br />
                 west hard for the
               </p>
+                
             </div>
-              <div className="absolute top-44 left-[405px] sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+               <div className="absolute top-36 xl:left-[385px] lg:left-[243px] cards sm:w-20 sm:h-20 -z-50 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>         
+            </div>
 
-            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+            <div className="card cursor-pointer">
+            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg">
               <div className="flex justify-center">
                 <img
                   src={events}
@@ -85,8 +95,14 @@ function Categories() {
                 <br /> in it. Preferd to men it
                 <br /> engrossed listening.{" "}
               </p>
+
+            </div>           
+               <div className="absolute top-36 xl:left-[742px] lg:left-[480px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
             </div>
-            <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+
+
+            <div className="card cursor-pointer">
+            <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg">
               <div className="flex justify-center">
                 <img
                   src={custom}
@@ -102,7 +118,12 @@ function Categories() {
                 <br /> aviation services for <br />
                 military customers
               </p>
+              
             </div>
+            <div className="absolute top-36 xl:left-[1099px] lg:left-[715px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+            </div>
+            
+            
           </div>
         </div>
 
@@ -114,7 +135,7 @@ function Categories() {
             Top Destination
           </h1>
         </div>
-        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around xl:space-x-5 sm:mt-20 mt-16 relative z-20">
+        <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around xl:space-x-5 sm:mt-20 mt-16 relative ">
           {Card.Image.map((data, id) => ( 
             <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
               
