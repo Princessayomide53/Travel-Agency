@@ -27,8 +27,8 @@ function Categories() {
 
         <div className="">
           <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:gap-28 md:place-items-center gap-10 lg:flex lg:gap-1 
-          lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2">
-            <div className="bg-white  lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg 
+          lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2  relative">
+            <div className="bg-white z-20 lg:w-44 md:w-44 xl:w-48 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg 
             shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
@@ -46,7 +46,9 @@ function Categories() {
                 <br /> vanity itself do in it.
               </p>
             </div>
-            <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
+              <div className="absolute top-44 hidden left-14 sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+
+            <div className="bg-white lg:w-44 z-20 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
                   src={plane}
@@ -64,6 +66,8 @@ function Categories() {
                 west hard for the
               </p>
             </div>
+              <div className="absolute top-44 left-[405px] sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+
             <div className="bg-white lg:w-44 xl:w-48 md:w-44 sm:h-56 w-48 h-48 rounded-xl drop-shadow-lg shadow-2xl shadow-white">
               <div className="flex justify-center">
                 <img
