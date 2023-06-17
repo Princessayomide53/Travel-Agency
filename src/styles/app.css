@@ -20,7 +20,9 @@
   }
   
   .card:hover .cards {
-    -webkit-transform: translate3d(30px, 30px, 30px);
+    -webkit-transform: translate3d(20px, 20px, 20px);
+    /* left: 500px;
+    top: 490px; */
   }
 
   .card:hover .cards {

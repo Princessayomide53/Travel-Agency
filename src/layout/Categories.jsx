@@ -50,7 +50,7 @@ function Categories() {
               </p>
               </div>
                </div>  
-                 <div className="absolute top-36 cards -z-10 xl:left-[30px] lg:left-[7px] sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>    
+                 <div className="absolute top-36 cards -z-10 md:left-[25px] xl:left-[8px] mac:left-[23px] lg:left-[7px] sm:w-20 sm:h-20 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>    
             </div>
             
 
@@ -74,7 +74,7 @@ function Categories() {
               </p>
                 
             </div>
-               <div className="absolute top-36 xl:left-[385px] lg:left-[243px] cards sm:w-20 sm:h-20 -z-50 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>         
+               <div className="absolute top-36 md:left-[465px] xl:left-[327px] lg:left-[243px] mac:left-[380px] cards sm:w-20 sm:h-20 -z-50 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>         
             </div>
 
             <div className="card cursor-pointer">
@@ -97,7 +97,7 @@ function Categories() {
               </p>
 
             </div>           
-               <div className="absolute top-36 xl:left-[742px] lg:left-[480px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+               <div className="absolute lg:top-36 md:top-[488px] md:left-[25px] xl:left-[642px] lg:left-[480px] mac:left-[735px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
             </div>
 
 
@@ -120,7 +120,7 @@ function Categories() {
               </p>
               
             </div>
-            <div className="absolute top-36 xl:left-[1099px] lg:left-[715px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
+            <div className="absolute lg:top-36 md:top-[488px] md:left-[465px] xl:left-[960px] lg:left-[715px] mac:left-[1094px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
             </div>
             
             

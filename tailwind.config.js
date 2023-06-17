@@ -11,7 +11,8 @@ export default {
     },
     extend: {
       screens: {
-        'pro' : '912px'
+        'pro' : '912px',
+        'mac' : '1440px'
       }
     },
   },
