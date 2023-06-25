@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import group from "../assets/group.png";
 import wifi from "../assets/wifi.png";
 import plane from "../assets/plane.png";
@@ -8,12 +8,22 @@ import custom from "../assets/custom.png";
 import Card from "../Data/Data";
 import { IoIosSend } from "react-icons/io";
 import '../styles/app.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Categories() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section>
-      <div className="sm:mt-10 mt-10 md:mt-2">
+      
+      <div className="sm:mt-10 mt-10 md:-mt-7 lg:mt-20">
+      <div data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <div className="">
           <p className="text-[#5E6282] font-bold text-center uppercase font-Poppins text-[11px] sm:text-base">
             Category
@@ -122,12 +132,17 @@ function Categories() {
             </div>
             <div className="absolute lg:top-36 md:top-[488px] md:left-[465px] xl:left-[960px] lg:left-[715px] mac:left-[1094px] cards sm:w-20 sm:h-20 -z-10 rounded-br-xl rounded-bl-sm rounded-t-[30px] bg-[#DF6951]"></div>
             </div>
-            
+            </div>
             
           </div>
         </div>
 
-        <div className="sm:mt-28 mt-20">
+
+        <div data-aos="fade-up"
+       data-aos-offset="100"
+       data-aos-duration="3000"
+       data-aos-easing="ease-in-sine">
+        <div className="sm:mt-36 mt-20">
           <p className="text-[#5E6282] text-center font-semibold uppercase font-Poppins text-[11px] sm:text-lg">
             Top Selling
           </p>
@@ -135,9 +150,16 @@ function Categories() {
             Top Destination
           </h1>
         </div>
+        </div>
+        
+
+        </div>
+       
         <div className="flex sm:flex-row space-y-14 sm:space-y-0 flex-col items-center md:justify-evenly lg:justify-evenly xl:justify-around xl:space-x-5 sm:mt-20 mt-16 relative ">
           {Card.Image.map((data, id) => ( 
-            <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id}>
+            <div className="hover:drop-shadow-xl hover:shadow-2xl" key={id} data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               
             <div  className="z-50 flex items-center justify-evenly ">
             <center>
@@ -163,10 +185,7 @@ function Categories() {
           ))}
           
         </div>
-        {/* <div className="flex justify-end sm:-mt-60 lg:pr-5 xl:pr-20">
-            <img src={decore2} alt="" className="sm:w-10 h-32" />
-          </div> */}
-      </div>
+     
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import decore from "../../src/assets/decore.png";
 import Image from "../../src/assets/Image.png";
@@ -6,9 +6,17 @@ import '../../src/App.css';
 // import Animista, { AnimistaTypes } from "react-animista";
 import {BiPlay} from "react-icons/bi";
 import tour from "../video/tour.mp4";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Hero() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+
   const [isPlaying, setIsPlaying] = useState(false);
   const [isNotPlaying, setIsNotPlaying] = useState(false);
 
@@ -25,15 +33,19 @@ function Hero() {
     <>
       <section>
         <Nav />
-        <div className="flex flex-end justify-end body ">
+       
+        <div className="flex flex-end justify-end body">
           <img
             src={decore}
             alt=""
             className="sm:-mt-20 sm:w-[500px] sm: w-[220px] h-[350px] sm:h-[550px] -mt-[57px]"
           />
         </div>
-        <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col md:justify-between lg:">
+        <div className="z-50 sm:mt-10 lg:pl-[15px] md:pl-[27px] flex sm:flex-row flex-col md:justify-between">
         {/* <Animista  duration="2s" delay="1s"> */}
+        <div data-aos="fade-up-right"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
           <div className="sm:mt-10 pt-[190px] md:pt-0 sm:pl-10 md:pl-5 pl-10 lg:pl-12 xl:pl-16">
             <p className="text-[#DF6951] -mt-[440px]  font-Poppins font-bold sm:pl-0 md:text-xl text-sm lg:text-3xl">
               Best Destinations Around the world
@@ -56,14 +68,17 @@ function Hero() {
       <BiPlay className="text-white sm:text-xl"/> </button> <p className="sm:mt-6 mt-7 font-Poppins sm:text-lg text-sm">Play Demo</p></div>)}
         </div>
           </div>
+          </div>
 
-
+          <div data-aos="fade-up-left"data-aos-easing="linear"
+     data-aos-duration="1500">
           <div className="pr-20 lg:pr-[120px] pt-16 lg:pt-0">
             <img
               src={Image}
               alt=""
               className="lg:w-[450px] xl:w-[600px] xl:h-[600px] lg:h-[450px] sm:-mt-[450px] md:w-[300px] md:h-[300px] -mt-[120px] w-[300px] h-[300px]"
             />
+          </div>
           </div>
         </div>
       </section>
