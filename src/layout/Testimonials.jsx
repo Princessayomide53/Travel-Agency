@@ -41,7 +41,7 @@ setCurrentIndex(newIndex);
       <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-12 flex flex-col ">
       <div data-aos="flip-up" 
       data-aos-easing="linear"
-      data-aos-duration="2000">
+      data-aos-duration="1500">
         <div className="mt-24 text-center">
           <p className="text-sm sm:text-lg uppercase text-[#5E6282] font-bold font-Poppins">
             Testimonials
@@ -64,7 +64,7 @@ setCurrentIndex(newIndex);
               key={id}
               data-aos="flip-down"
               data-aos-easing="linear"
-              data-aos-duration="2000"
+              data-aos-duration="1500"
               className={`bg-white z-10 ml-10 sm:ml-0 absolute top-48 w-[250px] h-[200px] sm:top-16 xl:right-60 lg:right-32 shadow-xl backdrop-blur-md 
               drop-shadow-xl mt-10 lg:w-[430px] lg:h-[272px] md:w-[270px] md:h-[260px] flex rounded-2xl duration-500 ${
                 currentIndex === id ? "fade-in" : "hidden"
@@ -95,7 +95,7 @@ setCurrentIndex(newIndex);
       <article>
       <div data-aos="fade-right"
       data-aos-easing="linear"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
       >
       
         <div className="sm:mt-80 mt-40 md:mt-56">

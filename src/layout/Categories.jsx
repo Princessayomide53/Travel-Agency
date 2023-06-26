@@ -35,8 +35,11 @@ function Categories() {
             <img src={group} alt="" className="w-20 sm:w-32" />
           </div>
         </div>
+        </div>
 
-        <div className="">
+        <div data-aos="flip-right"
+       data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500">
           <div className="grid md:grid-cols-2 grid-cols-1 place-items-center md:gap-28 md:place-items-center gap-10 lg:flex lg:gap-1 
           lg:justify-center lg:space-x-14 xl:justify-around xl:-space-x-3 mb-2  relative">
 
@@ -135,7 +138,7 @@ function Categories() {
             </div>
             
           </div>
-        </div>
+       
 
 
         <div data-aos="fade-up"

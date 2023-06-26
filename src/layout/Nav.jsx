@@ -1,14 +1,24 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Nav() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section>
       <nav>
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
         <div className="hidden sm:block">
-          <div className="flex sm:flex-row flex-col sm:pt-3 z-50 sm:justify-between">
+          <div className="flex pt-3 z-20 justify-between fixed w-full h-20 rounded-sm bg-gradient-to-r from-[#FFF1DA] to-white">
             <div>
             <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28 xl:pl-20">
               Jadoo
@@ -27,6 +37,7 @@ function Nav() {
               </ul>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="flex flex-col pt-2  z-50 sm:hidden">

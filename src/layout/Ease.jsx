@@ -22,7 +22,7 @@ function Ease() {
       <div className="pt-28 flex sm:flex-row sm:justify-around lg:space-x-28 xl:space-x-80 flex-col items-center">
         <div data-aos="zoom-in-right"
          data-aos-easing="linear"
-         data-aos-duration="2000">
+         data-aos-duration="1500">
           <p className="text-[#5E6282] lg:text-xl md:text-base text-lg font-Poppins">
             Easy and Fast
           </p>
@@ -50,7 +50,7 @@ function Ease() {
         
         <div data-aos="zoom-in-left"
         data-aos-easing="linear"
-      data-aos-duration="2000">
+      data-aos-duration="1500">
         <div className="bg-white w-[220px] h-64 mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 sm:drop-shadow-xl sm:backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
               <div className="flex justify-center pt-3">
               <img src={greece} alt="" className="lg:w-60 lg:h-32 md:w-40 md:h-18 w-40 h-20"/>

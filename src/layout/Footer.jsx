@@ -13,7 +13,7 @@ function Footer() {
     <div 
     data-aos="fade-up"
     data-aos-easing="linear"
-    data-aos-duration="2000">
+    data-aos-duration="1500">
     <div 
      className='grid lg:grid-cols-5 mt-10 lg:pl-12 grid-cols-2 place-content-center place-items-center pl-5  lg:pr-12  xl:pl-16 xl:pr-16 md:pl-16 md:pr-12 md:grid-cols-3 md:place-items-center'>
       {Foot.Card.map((item, id) => (

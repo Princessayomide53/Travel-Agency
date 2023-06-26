@@ -17,7 +17,7 @@ function Subscribe() {
         <div className='relative overflow-hidden'>
         <div data-aos="fade-left"
         data-aos-easing="linear"
-        data-aos-duration="2000">
+        data-aos-duration="1500">
 <div className='absolute top-24 xl:right-44 lg:right-16 right-5 md:right-16 pro:right-32 mac:right-64'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
             <div className='flex justify-center'>
             <div className='bg-[#DFD7F9] lg:w-[850px] w-[330px] h-[257px] md:w-[620px] md:h-[280px] lg:h-[310px] 
