@@ -3,12 +3,21 @@ import send1 from "../assets/send1.png";
 import decore3 from "../assets/decore3.png";
 import decore4 from "../assets/decore4.png";
 import decore5 from "../assets/decore5.png";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Subscribe() {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <>
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
+        <div data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
 <div className='absolute top-24 xl:right-44 lg:right-16 right-5 md:right-16 pro:right-32 mac:right-64'><img src={send1} alt="" className='w-10 h-10 sm:w-16 sm:h-16'/></div>
             <div className='flex justify-center'>
             <div className='bg-[#DFD7F9] lg:w-[850px] w-[330px] h-[257px] md:w-[620px] md:h-[280px] lg:h-[310px] 
@@ -33,6 +42,7 @@ function Subscribe() {
                 <button disabled className="bg-gradient-to-br  from-[#FF7D68] to-[#FF946D] sm:text-base text-sm sm:px-7 sm:py-3 mt-7 sm:mt-0 px-10 py-3 rounded-xl text-white">Subscribe</button>
                </div> 
             </div></div>
+        </div>
         </div>
 
 <div className='flex justify-center sm:mt-24 mt-16'>

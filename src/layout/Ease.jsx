@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import group1 from "../assets/group1.png";
 // import group2 from "../assets/group2.png";
 // import group3 from "../assets/group3.png";
@@ -8,13 +8,21 @@ import leaf from "../assets/leaf.png";
 import map from "../assets/map.png";
 import send from "../assets/send.png";
 import building from "../assets/building.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Ease() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
+    
       <div className="pt-28 flex sm:flex-row sm:justify-around lg:space-x-28 xl:space-x-80 flex-col items-center">
-        <div className="">
+        <div data-aos="zoom-in-right"
+         data-aos-easing="linear"
+         data-aos-duration="2000">
           <p className="text-[#5E6282] lg:text-xl md:text-base text-lg font-Poppins">
             Easy and Fast
           </p>
@@ -37,8 +45,12 @@ function Ease() {
           <div>         
           </div>
           </div>
+          </div>
 
-        </div>
+        
+        <div data-aos="zoom-in-left"
+        data-aos-easing="linear"
+      data-aos-duration="2000">
         <div className="bg-white w-[220px] h-64 mt-10 shadow-2xl md:h-64 md:w-[210px] shadow-blue-600 sm:drop-shadow-xl sm:backdrop-blur-lg rounded-xl lg:w-[270px] lg:h-72 lg:mt-36 md:mt-28">
               <div className="flex justify-center pt-3">
               <img src={greece} alt="" className="lg:w-60 lg:h-32 md:w-40 md:h-18 w-40 h-20"/>
@@ -53,6 +65,7 @@ function Ease() {
                 <div className="lg:mt-5 sm:pl-5 pl-7 md:mt-7 mt-7 flex space-x-5"><img src={building} alt="" className="w-3 h-3" />
                 <p className="lg:text-sm md:text-xs text-xs text-[#84829A] -mt-1">24 people going</p>
                 </div>
+            </div>
             </div>
       </div>
     </>

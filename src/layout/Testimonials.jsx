@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Test from "../Data/Test";
 import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
@@ -8,11 +8,16 @@ import image5 from "../assets/image5.png";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
 import '../styles/app.css';
 import {RxDotFilled} from "react-icons/rx";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 function Testimonials() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const [currentIndex, setCurrentIndex] = useState(0);
 
    const prevSlide = () => {
@@ -34,6 +39,9 @@ setCurrentIndex(newIndex);
   return (
     <section>
       <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-12 flex flex-col ">
+      <div data-aos="flip-up" 
+      data-aos-easing="linear"
+      data-aos-duration="2000">
         <div className="mt-24 text-center">
           <p className="text-sm sm:text-lg uppercase text-[#5E6282] font-bold font-Poppins">
             Testimonials
@@ -45,6 +53,7 @@ setCurrentIndex(newIndex);
           <div className="flex mt-5 justify-center">
           {Test.Data.map((index) => <div key={index} className="px-2 "><RxDotFilled onClick={ () => goToSlide(index)}/></div>)}</div>
         </div>
+        </div>
         
 
 
@@ -53,11 +62,15 @@ setCurrentIndex(newIndex);
           {Test.Data.map((items, id) => (
             <div
               key={id}
+              data-aos="flip-down"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
               className={`bg-white z-10 ml-10 sm:ml-0 absolute top-48 w-[250px] h-[200px] sm:top-16 xl:right-60 lg:right-32 shadow-xl backdrop-blur-md 
               drop-shadow-xl mt-10 lg:w-[430px] lg:h-[272px] md:w-[270px] md:h-[260px] flex rounded-2xl duration-500 ${
                 currentIndex === id ? "fade-in" : "hidden"
               }`}
             >
+             
               <div className="sm:p-5 p-3 text-base font-Poppins">
                 <img src={items.imgUrl} alt="" className="w-10 h-10 sm:h-16 sm:w-16" />
                 <p className="lg:pt-4 md:pt-3 sm:leading-7  leading-6 flex-wrap lg:text-base md:text-sm text-[10px] mt-3 sm:mt-0">
@@ -77,8 +90,14 @@ setCurrentIndex(newIndex);
           <SlArrowUp size={25} className="text-base cursor-pointer" onClick={prevSlide}/> <SlArrowDown onClick={nextSlide} size={25} className="text-sm cursor-pointer"/>
         </div>
       </div>
+      
 
       <article>
+      <div data-aos="fade-right"
+      data-aos-easing="linear"
+      data-aos-duration="2000"
+      >
+      
         <div className="sm:mt-80 mt-40 md:mt-56">
           <div className="flex lg:justify-evenly xl:justify-around md:justify-center md:space-x-16 justify-center space-x-8">
             <img
@@ -107,6 +126,7 @@ setCurrentIndex(newIndex);
               className="lg:w-20 lg:h-6 lg:mt-8 md:w-16 md:h-5 md:mt-8 w-12 h-3 mt-3"
             />
           </div>
+        </div>
         </div>
 </article>   
  </section>

@@ -23,7 +23,7 @@ function Categories() {
       <div className="sm:mt-10 mt-10 md:-mt-7 lg:mt-20">
       <div data-aos="fade-down"
       data-aos-easing="linear"
-      data-aos-duration="1500">
+      data-aos-duration="2000">
         <div className="">
           <p className="text-[#5E6282] font-bold text-center uppercase font-Poppins text-[11px] sm:text-base">
             Category
@@ -140,7 +140,7 @@ function Categories() {
 
         <div data-aos="fade-up"
        data-aos-offset="100"
-       data-aos-duration="3000"
+       data-aos-duration="2000"
        data-aos-easing="ease-in-sine">
         <div className="sm:mt-36 mt-20">
           <p className="text-[#5E6282] text-center font-semibold uppercase font-Poppins text-[11px] sm:text-lg">
