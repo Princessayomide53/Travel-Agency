@@ -16,15 +16,15 @@ function Nav() {
       <nav>
         <div data-aos="fade-down"
         data-aos-easing="linear"
-        data-aos-duration="2000">
+        data-aos-duration="1000">
         <div className="hidden sm:block">
           <div className="flex pt-3 z-20 justify-between fixed w-full h-20 rounded-sm bg-gradient-to-r from-[#FFF1DA] to-white">
-            <div>
-            <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28 xl:pl-20">
+            <div className="flex relative">
+            <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28 xl:pl-20 z-10">
               Jadoo
             </h1>
-            {/* <div className="bg-green-500 w-5 h-5 flex"></div>
-            <div className="bg-green-500 w-5 h-5"></div> */}
+           <div className="bg-[#F1A501] w-5 h-5 absolute xl:top-5 xl:left-[158px] lg:top-5 lg:left-[126px] md:top-5 md:left-[125px] rounded-full"></div>
+            <div className="bg-[#F1A501] w-5 h-5 absolute xl:top-5 xl:left-[185px] lg:top-5 lg:left-[154px] md:top-5 md:left-[155px] rounded-full"></div> 
             </div>
             
 

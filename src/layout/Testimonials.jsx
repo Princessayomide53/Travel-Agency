@@ -38,11 +38,11 @@ setCurrentIndex(newIndex);
     
   return (
     <section>
-      <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-12 flex flex-col ">
+      <div className="sm:flex-row sm:justify-around xl:space-x-48 relative mt-12 flex flex-col">
       <div data-aos="flip-up" 
       data-aos-easing="linear"
       data-aos-duration="1500">
-        <div className="mt-24 text-center">
+        <div className="mt-24 text-center overflow-hidden">
           <p className="text-sm sm:text-lg uppercase text-[#5E6282] font-bold font-Poppins">
             Testimonials
           </p>
@@ -98,7 +98,7 @@ setCurrentIndex(newIndex);
       data-aos-duration="1500"
       >
       
-        <div className="sm:mt-80 mt-40 md:mt-56">
+        <div className="sm:mt-80 mt-40 md:mt-56 overflow-hidden">
           <div className="flex lg:justify-evenly xl:justify-around md:justify-center md:space-x-16 justify-center space-x-8">
             <img
               src={image1}
@@ -123,7 +123,7 @@ setCurrentIndex(newIndex);
             <img
               src={image5}
               alt=""
-              className="lg:w-20 lg:h-6 lg:mt-8 md:w-16 md:h-5 md:mt-8 w-12 h-3 mt-3"
+              className="lg:w-20 lg:h-6 lg:mt-8 md:w-16 md:h-5 md:mt-8 w-9 h-2 mt-3"
             />
           </div>
         </div>
