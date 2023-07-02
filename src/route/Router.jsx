@@ -5,7 +5,7 @@ import Forgotpassword from '../components/ForgotPassword/Forgotpassword';
 import Reset from '../components/ForgotPassword/Reset';
 import Login from '../components/Login/Login';
 import LandingPage from "../pages/LandingPage";
-import  Hotels  from "../pages/Hotels";
+import  Hotels  from "../pages/Hotels/Hotels";
 import { Destinations } from "../pages/Destinations";
 import { Bookings } from "../pages/Bookings";
 import { Flights } from "../pages/Flights";

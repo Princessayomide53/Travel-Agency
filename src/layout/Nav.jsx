@@ -18,7 +18,7 @@ function Nav() {
         data-aos-easing="linear"
         data-aos-duration="1000">
         <div className="hidden sm:block">
-          <div className="flex pt-3 z-20 justify-between fixed w-full h-20 rounded-sm bg-gradient-to-r from-[#FFF1DA] to-white">
+          <div className="flex pt-3 z-20 justify-between fixed w-full h-20 rounded-sm bg-white from-[#FFF1DA] to-white">
             <div className="flex relative">
             <h1 className="sm:text-5xl text-[#212832] font-semibold md:pl-12 sm:pl-28 xl:pl-20 z-10">
               Jadoo
